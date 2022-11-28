@@ -1,0 +1,202 @@
+<html lang="en"><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" type="text/css" href="//d1ypub5wfz82gq.cloudfront.net/AdsService/CSS/ba_ad.min.css?v=180717001"><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="//agent.aralego.com/sdk" async=""></script><script type="text/javascript" src="//js1.bloggerads.net/getads.aspx?blogid=20180821000002&amp;fid=1&amp;c=b1295833048&amp;d=1&amp;sh5=1&amp;sflash=0&amp;isc=0&amp;w=477&amp;isw=0&amp;hw=478&amp;cw=0" async=""></script><script type="text/javascript" src="//d1ypub5wfz82gq.cloudfront.net/AdsService/JS/ba.min.js?v=180717001" async=""></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-124339513-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-124339513-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Day18 - 網路爬蟲基礎篇</title>
+    
+    
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap_blog/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="Shortcut Icon" type="image/x-icon" href="/static/images/AI_free_logo.png">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font1.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font2.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/bootstrap_blog/css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/blog">AI . FREE TEAM</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/postlist">文章列表</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacts">聯絡我們</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">會員中心</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/accounts/logout">登出</a>
+            </li><input type="hidden" name="csrfmiddlewaretoken" value="2yy0FywPvnVUpIabXxi0g6CwLzmLhCm3Lkz39YHat43YLzH0Cui9UGuBkQCfdlFW">  
+                        
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+
+
+
+    <!-- <div>
+      <strong>Menu:</strong>
+      <ul>
+    
+    <li><a href="/accounts/email/">Change E-mail</a></li>
+    <li><a href="/accounts/logout/">Sign Out</a></li>
+     
+      </ul>
+    </div>-->
+
+    
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('/static/images/signup.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1 align="center">Day18 - 網路爬蟲基礎篇</h1>
+              <h2 class="subheading" align="center"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">         
+              
+                <h1 style="white-space: normal; box-sizing: border-box; margin: 30px 0px 14px; font-size: 30px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); background-color: rgb(255, 255, 255); text-align: center;"><strong>斜槓學習 – 零基礎成為 AI 解夢大師秘笈</strong></h1><p style="white-space: normal; text-align: center;"><span style="font-size: 24px;"><strong><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">本文作者：Wayne</span></strong></span></p><h2 style="white-space: normal; box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; background-color: rgb(255, 255, 255);">系列文章簡介<br></h2><p style="margin-top: 0px; margin-bottom: 26px; white-space: normal; box-sizing: border-box; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">自由團隊將從0到1 手把手教各位讀者學會(1)Python基礎語法、(2)Python Web 網頁開發框架 – Django&nbsp;、(3)Python網頁爬蟲 – 周易解夢網、(4)Tensorflow AI語言模型基礎與訓練 – LSTM、(5)實際部屬AI解夢模型到Web框架上。</p><h2 style="white-space: normal; box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; background-color: rgb(255, 255, 255);">學習資源</h2><p style="margin-top: 0px; margin-bottom: 26px; white-space: normal; box-sizing: border-box; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">AI . FREE Team 讀者專屬福利 →&nbsp;<a href="https://github.com/AI-FREE-Team/Python-Basics" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">Python Basics 免費學習資源</a></p><h1 style="box-sizing: border-box; margin: 30px 0px 14px; font-size: 30px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); white-space: normal; background-color: rgb(255, 255, 255);">學習目標</h1><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">PTT網路爬蟲基礎教學</p><h1 style="box-sizing: border-box; margin: 30px 0px 14px; font-size: 30px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); white-space: normal; background-color: rgb(255, 255, 255);">1. 為什麼需要網路爬蟲?</h1><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">在架設人工智慧前，我們需要有大數據，除了可以從數據庫獲取之外，我們也可以從網路上蒐集我們需要的數據，如果數據只有幾十筆還好，那假如有上百筆、上千筆我們該怎麼蒐集呢？這時網路爬蟲就是解決這個問題的好幫手!你可以把網路爬蟲( web crawler）想成是一種能幫我們節省複製貼上的時間，自動瀏覽和爬取資訊的網路機器人。</p><h1 style="box-sizing: border-box; margin: 30px 0px 14px; font-size: 30px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); white-space: normal; background-color: rgb(255, 255, 255);">2. 網路爬蟲兩個步驟</h1><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">使用網路爬蟲可以簡單分成兩個步驟分別是<span style="box-sizing: border-box; font-weight: 700;">取得回應</span>和<span style="box-sizing: border-box; font-weight: 700;">分析內容</span>，首先，我們會有一個我們想要擷取資料的網頁，我們會對於伺服器送出Request請求，並且取得Response回應，在下面的程式碼中，我們會對於伺服器送出GET Request來取得HTML檔案的Response，再取得HTML檔案後接著我們就可以進行下一步分析內容，透過字串處理、切分、取代等的各種技巧來將HTML過濾抓到我們所要的資料。</p><h1 style="box-sizing: border-box; margin: 30px 0px 14px; font-size: 30px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); white-space: normal; background-color: rgb(255, 255, 255);">3. 使用Chrome來示範</h1><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">我們先找一個想要抓取的網頁，這次我們用Chrome來示範，在Chrome的 右上角可以開啟更多工具，接著我們找到開發人員工具點進去，找到上排的Network鍵，在我們按下F5重新整理，就能看到一堆內容，找一張圖片點下去，我們就能找到user agent 網址。<br></p><h1 style="box-sizing: border-box; margin: 30px 0px 14px; font-size: 30px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); white-space: normal; background-color: rgb(255, 255, 255);">4. 安裝套件</h1><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">現在讓我們來安裝套件。</p><blockquote style="box-sizing: border-box; padding: 10px 20px; margin: 0px 0px 20px; font-size: 17.5px; border-left: 5px solid rgb(203, 214, 223); color: rgb(96, 104, 112); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 17px; line-height: 1.7;">Request<br style="box-sizing: border-box;">Beautiful Soup</p></blockquote><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">import&nbsp;requestsfrom&nbsp;bs4&nbsp;
+import&nbsp;BeautifulSoup
+from&nbsp;urllib.request&nbsp;import&nbsp;urlopen</pre><h1 style="box-sizing: border-box; margin: 30px 0px 14px; font-size: 30px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); white-space: normal; background-color: rgb(255, 255, 255);">5. 使用你的user agent</h1><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">headers&nbsp;=&nbsp;{
+	'user-agent':&nbsp;'你的user&nbsp;agent'
+}</pre><h1 style="box-sizing: border-box; margin: 30px 0px 14px; font-size: 30px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); white-space: normal; background-color: rgb(255, 255, 255);">6. 開始爬蟲</h1><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">使用PTT表特版做示範!</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">#取得回應
+res&nbsp;=&nbsp;requests.get(‘https://www.ptt.cc/bbs/Beauty/index.html’,&nbsp;headers=headers)
+soup&nbsp;=&nbsp;BeautifulSoup(res.text,&nbsp;‘html.parser’)
+images&nbsp;=&nbsp;soup.select(‘a[href^=https://i.imgur])
+
+#分析內容
+for&nbsp;image&nbsp;in&nbsp;images:
+	print(image[‘href’])
+	filename&nbsp;=&nbsp;image[‘href’].split(‘/’)[3]
+	img&nbsp;=&nbsp;urlopen(image[‘href’])
+	#存取圖片&nbsp;※注意！請在執行路徑建立&nbsp;images&nbsp;資料夾，提供程式存放圖片
+	with&nbsp;open(‘./images/’&nbsp;+&nbsp;str(filename),&nbsp;‘wb’)&nbsp;as&nbsp;f:
+			f.write(img.read())</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">就可以成功爬取到網頁上的圖片囉！明天我們會更進一步去爬取其他網頁，敬請期待！</p><h1 style="box-sizing: border-box; margin: 30px 0px 14px; font-size: 30px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); white-space: normal; background-color: rgb(255, 255, 255);">想更深入認識 AI . FREE Team?</h1><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">自由團隊 官方網站：<a href="https://aifreeblog.herokuapp.com/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://aifreeblog.herokuapp.com/</a><br style="box-sizing: border-box;">自由團隊 Github：<a href="https://github.com/AI-FREE-Team/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://github.com/AI-FREE-Team/</a><br style="box-sizing: border-box;">自由團隊 粉絲專頁：<a href="https://www.facebook.com/AI.Free.Team/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.facebook.com/AI.Free.Team/</a><br style="box-sizing: border-box;">自由團隊 IG：<a href="https://www.instagram.com/aifreeteam/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.instagram.com/aifreeteam/</a><br style="box-sizing: border-box;">自由團隊 Youtube：<a href="https://www.youtube.com/channel/UCjw6Kuw3kwM_il39NTBJVTg/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.youtube.com/channel/UCjw6Kuw3kwM_il39NTBJVTg/</a></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">文章同步發布於：<span style="color: rgb(0, 112, 192); text-decoration: underline;"><a href="https://ithelp.ithome.com.tw/articles/10246194" target="_blank" style="color: rgb(0, 112, 192); text-decoration: underline;">第十二屆 IT 挑戰賽部落格</a></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255); box-sizing: border-box;">(</span><a href="https://aifreeblog.herokuapp.com/posts/122/AI_dream_19/" target="_blank" textvalue="繼續閱讀下一篇教學..." style="box-sizing: border-box; color: rgb(0, 112, 192); text-decoration: underline;"><span style="box-sizing: border-box; color: rgb(0, 112, 192);">繼續閱讀下一篇教學...</span></a><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255); box-sizing: border-box;">)</span></p>
+
+            <p class="post-meta"><font face="微軟正黑體">由
+              <a href="#">Ken</a>
+              發布於 2020年11月13日 08:53</font></p>
+          </div>
+          <hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="/postlist">回文章列表 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    
+    
+    
+
+
+        <!-- Footer -->
+    <div align="center">
+      <div id="BA_AD_1"></div><script type="text/javascript" src="//js1.bloggerads.net/ShowBanner.aspx?blogid=20180821000002" async=""></script>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/blog">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/AI.Free.Team/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:AI.Free.Team@gmail.com">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright © AI . Free Team 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/bootstrap_blog/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/bootstrap_blog/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="/static/bootstrap_blog/js/clean-blog.min.js"></script>
+
+  
+
+
+</body></html>

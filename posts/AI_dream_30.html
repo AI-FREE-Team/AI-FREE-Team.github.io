@@ -1,0 +1,304 @@
+<html lang="en"><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" type="text/css" href="//d1ypub5wfz82gq.cloudfront.net/AdsService/CSS/ba_ad.min.css?v=180717001"><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="//agent.aralego.com/sdk" async=""></script><script type="text/javascript" src="//js1.bloggerads.net/getads.aspx?blogid=20180821000002&amp;fid=1&amp;c=b996007718&amp;d=1&amp;sh5=1&amp;sflash=0&amp;isc=0&amp;w=477&amp;isw=0&amp;hw=478&amp;cw=0" async=""></script><script type="text/javascript" src="//d1ypub5wfz82gq.cloudfront.net/AdsService/JS/ba.min.js?v=180717001" async=""></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-124339513-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-124339513-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Day30 - Django 整合部署 AI model</title>
+    
+    
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap_blog/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="Shortcut Icon" type="image/x-icon" href="/static/images/AI_free_logo.png">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font1.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font2.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/bootstrap_blog/css/clean-blog.min.css" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="https://cdn.aralego.net/css/dev/ucfad-formats.css"></head>
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/blog">AI . FREE TEAM</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/postlist">文章列表</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacts">聯絡我們</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">會員中心</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/accounts/logout">登出</a>
+            </li><input type="hidden" name="csrfmiddlewaretoken" value="mWPyrTC6dOshH8OAyDVCFtG0Sxw8jOYH5IQBVjNrbvAl3ZlpdAVLj3y5rOMCfxhA">  
+                        
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+
+
+
+    <!-- <div>
+      <strong>Menu:</strong>
+      <ul>
+    
+    <li><a href="/accounts/email/">Change E-mail</a></li>
+    <li><a href="/accounts/logout/">Sign Out</a></li>
+     
+      </ul>
+    </div>-->
+
+    
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('/static/images/signup.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1 align="center">Day30 - Django 整合部署 AI model</h1>
+              <h2 class="subheading" align="center"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">         
+              
+                <h1 style="white-space: normal; box-sizing: border-box; margin: 30px 0px 14px; font-size: 30px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); background-color: rgb(255, 255, 255); text-align: center;"><strong>槓學習 – 零基礎成為 AI 解夢大師秘笈</strong></h1><p style="white-space: normal; text-align: center;"><span style="font-size: 24px;"><strong><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">本文作者：<a href="https://github.com/chenkenanalytic" target="_blank" style="color: rgb(0, 112, 192); text-decoration: underline;"><span style="font-size: 24px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255); color: rgb(0, 112, 192);">Ken</span></a></span></strong></span></p><h2 style="white-space: normal; box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; background-color: rgb(255, 255, 255);">系列文章簡介<br></h2><p style="margin-top: 0px; margin-bottom: 26px; white-space: normal; box-sizing: border-box; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">自由團隊將從0到1 手把手教各位讀者學會(1)Python基礎語法、(2)Python Web 網頁開發框架 – Django&nbsp;、(3)Python網頁爬蟲 – 周易解夢網、(4)Tensorflow AI語言模型基礎與訓練 – LSTM、(5)實際部屬AI解夢模型到Web框架上。</p><h2 style="white-space: normal; box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; background-color: rgb(255, 255, 255);">學習資源</h2><p style="margin-top: 0px; margin-bottom: 26px; white-space: normal; box-sizing: border-box; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">AI . FREE Team 讀者專屬福利 →&nbsp;<a href="https://github.com/AI-FREE-Team/Python-Basics" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">Python Basics 免費學習資源</a></p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">教學開始</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">終於到了成為解夢大師的最後一天，相信讀者們都已經站穩腳步、蹲好馬步，準備開始在江湖上替人解夢改運了吧！本日的教學文章將引導讀者們將開發完成的解夢模型，實際架設到Django上，提供使用者能夠透過網頁介面，進行解夢。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">基礎必備知識</p><ol style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>Python基礎程式開發</p></li><li><p>Django網頁開發框架</p></li><li><p>Python網路爬蟲</p></li><li><p>Tensorflow - AI語言模型開發(LSTM)</p></li></ol><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">(若尚未熟悉其中任一技術的讀者，歡迎查看自由團隊的對應教學文章！)</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">為了提升讀者們的開發速度，自由團隊將提供「colab實作程式碼教學」及「Django網頁聊天機器人模板」，透過colab修改聊天機器人的Django模板，部屬LSTM模型。</p><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">基礎前置設定</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-weight: 700;">Step 1.</span><br style="box-sizing: border-box;">使用 google drive，以利讀取已儲存的模型、tokenizer…等部署資訊。(若在本地端進行部署，此步驟可略。)</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">#&nbsp;連結至個人&nbsp;Google&nbsp;Drive
+from&nbsp;google.colab&nbsp;import&nbsp;drive
+drive.mount('/content/drive')</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-weight: 700;">Step 2.</span><br style="box-sizing: border-box;">下載並解壓縮自由團隊開發的開源Django聊天機器人模板。(若使用自己開發的Django APP，此步驟可略。)</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">#&nbsp;Git&nbsp;下載自由團隊-開源&nbsp;Django&nbsp;聊天機器人模板
+!git&nbsp;clone&nbsp;https://github.com/chenkenanalytic/pro_file.git&nbsp;
+#&nbsp;解壓縮自由團隊-開源&nbsp;Django&nbsp;聊天機器人模板&nbsp;壓縮檔
+!7z&nbsp;x&nbsp;/content/pro_file/aifreeteam_c.7z</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">※ 解壓密碼，請洽&nbsp;<a href="https://www.facebook.com/AI.Free.Team" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">AI . FREE Team 粉絲頁</a>，按讚、私訊：「我想要聊天機器人模板」，就免費提供給讀者解壓密碼喔！</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-weight: 700;">Step 3.</span><br style="box-sizing: border-box;">下載並安裝聊天機器人套件，測試模板是否能正常運作，若想直接開發AI模型部署，此步驟可略。</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">#&nbsp;安裝聊天機器人相關套件
+!pip&nbsp;install&nbsp;chatterbot==0.8.7
+!pip&nbsp;install&nbsp;chatterbot-corpus==1.1.2
+
+#&nbsp;Make&nbsp;migration&nbsp;-&nbsp;確保開源&nbsp;Django&nbsp;專案順利運作
+!python&nbsp;/content/aifreeteam_chatbot/manage.py&nbsp;migrate
+!python&nbsp;/content/aifreeteam_chatbot/manage.py&nbsp;makemigrations</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">※ 注意若有出現紅色 Warnings 提醒字眼，記得點擊"RESTART RUNTIME"，確保環境套件正常運行。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-weight: 700;">Step 4.</span><br style="box-sizing: border-box;">下載Ngrok並解壓縮 (便於後續我們能跨網域Access colab 的 server)</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">!wget&nbsp;https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip&nbsp;
+!unzip&nbsp;ngrok-stable-linux-amd64.zip</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-weight: 700;">Step 5.</span><br style="box-sizing: border-box;">透過Ngrok先啟動對外跨網域連線的port網址，並開啟Django網頁。</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">#&nbsp;使用&nbsp;Django&nbsp;套件語法，開啟並運行&nbsp;colab&nbsp;Localhost
+#&nbsp;最後透過&nbsp;Ngrok&nbsp;套件對公開網域開啟&nbsp;Access&nbsp;的權限
+
+get_ipython().system_raw('./ngrok&nbsp;http&nbsp;8050&nbsp;&amp;')
+
+import&nbsp;timetime.sleep(1)
+
+!curl&nbsp;-s&nbsp;http://localhost:4040/api/tunnels&nbsp;|&nbsp;python3&nbsp;-c&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;"import&nbsp;sys,&nbsp;json;&nbsp;print(json.load(sys.stdin)['tunnels'][0]['public_url'])"
+print("=======================================")
+!python&nbsp;/content/aifreeteam_chatbot/manage.py&nbsp;runserver&nbsp;0:8050</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">透過點擊 Ngrok 所產生的網址，我們便能順利連上在colab本地端運行的Django 網站，也能透過模板介面與chatterbot聊天機器人互動。(如下範例所示)</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><img src="https://ithelp.ithome.com.tw/upload/images/20201015/20130712WPtilXlIFP.png" alt="https://ithelp.ithome.com.tw/upload/images/20201015/20130712WPtilXlIFP.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"></p><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">進階開發 Django 專案 – AI 模型部署</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-weight: 700;">Step 6. 將 setting.py 的聊天機器人模組進行註解 or 刪除</span><br style="box-sizing: border-box;">目的是將聊天機器人的功能關閉，若不關閉，後續操作須注意不要呼叫到 chatterbot 相關套件功能，以避免開發過程額外的錯誤。</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">path&nbsp;/content/aifreeteam_chatbot/example_app/settings.py</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><img src="https://ithelp.ithome.com.tw/upload/images/20201015/20130712r8E6Vf6ycV.png" alt="https://ithelp.ithome.com.tw/upload/images/20201015/20130712r8E6Vf6ycV.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"><br style="box-sizing: border-box;">▲ 註解 chatterbot app 如上圖 (快捷鍵：選取程式碼 + ctrl + / )</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-weight: 700;">Step 7. 將 urls.py 聊天機器人的url 進行註解並修改</span></p><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>增加LSTM 模型的 API view 及 url 網址</p></li></ul><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">#&nbsp;url(r'^$',&nbsp;ChatterBotAppView,&nbsp;name='main'),
+#&nbsp;url(r'^api/chatterbot/',&nbsp;ChatterBotApiView.as_view(),&nbsp;name='chatterbot'),
+url(r'^$',&nbsp;lstm_AppView,&nbsp;name='main'),
+url(r'^api/lstm/',&nbsp;lstm_ApiView.as_view(),&nbsp;name='lstm')</pre><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>將 View 進行修改</p></li></ul><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">#&nbsp;註解&nbsp;chatterbot&nbsp;套件(#from&nbsp;example_app.views&nbsp;import&nbsp;ChatterBotAppView...)
+#&nbsp;新增&nbsp;LSTM&nbsp;模型&nbsp;APP&nbsp;view&nbsp;套件
+from&nbsp;example_app.views&nbsp;import&nbsp;lstm_AppView,&nbsp;lstm_ApiView</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><img src="https://ithelp.ithome.com.tw/upload/images/20201015/20130712YTsIMMJq2m.png" alt="https://ithelp.ithome.com.tw/upload/images/20201015/20130712YTsIMMJq2m.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"><br style="box-sizing: border-box;">▲ 範例如上所示</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-weight: 700;">Step 8. 在 Views 中，增加 LSTM 模型運行的 API view</span><br style="box-sizing: border-box;">可先在 colab 執行程式碼看看是否有 Error，<br style="box-sizing: border-box;">若沒有錯誤訊息，可直接於 views.py 檔案新增下述程式碼</p><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>(1) Keras 模型前置設定、文字生成函式</p></li></ul><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">依據訓練 AI 模型的資訊設定參數及超參數</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">import&nbsp;tensorflow&nbsp;as&nbsp;tf
+import&nbsp;pickle
+
+#&nbsp;【重要】請設定周易解夢模型資訊======================================
+Tokenizer_path&nbsp;=&nbsp;'/content/drive/My&nbsp;Drive/LAB/IT_post/tokenizer.pickle'
+model_path&nbsp;=&nbsp;'/content/drive/My&nbsp;Drive/LAB/IT_post/model_01.h5'
+w&nbsp;=&nbsp;5445
+EMBEDDING_DIM&nbsp;=&nbsp;512
+UNITS&nbsp;=&nbsp;1024
+#&nbsp;【重要】請設定周易解夢模型資訊======================================</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">讀取開發文字集的 tokenizer</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">#&nbsp;讀取先前儲存的&nbsp;Tokenizer&nbsp;(文字對應數字的索引)
+
+with&nbsp;open(Tokenizer_path,&nbsp;'rb')&nbsp;as&nbsp;handle:
+&nbsp;&nbsp;&nbsp;&nbsp;tokenizer&nbsp;=&nbsp;pickle.load(handle)</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">設定模型</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">#&nbsp;跟訓練時不同，生成過程的&nbsp;BATCH_SIZE&nbsp;改設為&nbsp;1
+BATCH_SIZE&nbsp;=&nbsp;1
+
+#&nbsp;定義生成的模型
+infer_model&nbsp;=&nbsp;tf.keras.Sequential()
+infer_model.add(tf.keras.layers.Embedding(input_dim=w,&nbsp;output_dim=EMBEDDING_DIM,&nbsp;batch_input_shape=[BATCH_SIZE,&nbsp;None]))
+infer_model.add(tf.keras.layers.LSTM(units=UNITS,&nbsp;return_sequences=True,&nbsp;stateful=True))
+infer_model.add(tf.keras.layers.Dense(w))
+
+#&nbsp;載入已儲存模型之權重
+infer_model.load_weights(model_path)
+infer_model.build(tf.TensorShape([1,&nbsp;None]))</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">撰寫解夢的函式 (輸入夢境內容 – dream_text、輸出 AI 解夢結果 - text_generated)</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">def&nbsp;interpret_dream(dream_text):
+&nbsp;&nbsp;&nbsp;&nbsp;text_generated&nbsp;=&nbsp;dream_text
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;i&nbsp;in&nbsp;range(100):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dream&nbsp;=&nbsp;tokenizer.texts_to_sequences([text_generated])[0]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;增加&nbsp;batch&nbsp;維度丟入模型取得預測結果後&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;再度降維，拿掉&nbsp;batch&nbsp;維度
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input&nbsp;=&nbsp;tf.expand_dims(dream,&nbsp;axis=0)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;predictions&nbsp;=&nbsp;infer_model(input)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;predictions&nbsp;=&nbsp;tf.squeeze(predictions,&nbsp;0)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temperature&nbsp;=&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;利用生成溫度影響抽樣結果
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;predictions&nbsp;/=&nbsp;temperature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;取得這個時間點模型生成的中文字
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;predicted_id&nbsp;=&nbsp;tf.random.categorical(predictions,&nbsp;num_samples=1)[-1,0].numpy()
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input_eval&nbsp;=&nbsp;tf.expand_dims([predicted_id],&nbsp;0)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;partial_texts&nbsp;=&nbsp;[&nbsp;tokenizer.index_word[predicted_id]&nbsp;]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text_generated&nbsp;+=&nbsp;partial_texts[0]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;成功生成&nbsp;解夢文字檔&nbsp;→&nbsp;text_generated&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;透過擷取重點解夢文字作呈現
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;text_generated.split('\n')[0].split('。')[0]</pre><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>(2) API View 對接程式碼</p></li></ul><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">參考 chatterbot API view 的程式碼，修改為 lstm 模型專屬的 API view。</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">from&nbsp;django.views.generic&nbsp;import&nbsp;Viewdef&nbsp;
+
+lstm_AppView(request):
+&nbsp;&nbsp;&nbsp;&nbsp;template_name&nbsp;=&nbsp;'app.html'
+&nbsp;&nbsp;&nbsp;&nbsp;csrf_token&nbsp;=&nbsp;get_token(request)&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;render(request,&nbsp;'app.html',locals())
+
+class&nbsp;lstm_ApiView(View):
+
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;get_conversation(self,&nbsp;request):
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;Obj(object):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;__init__(self):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.id&nbsp;=&nbsp;None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.statements&nbsp;=&nbsp;[]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conversation&nbsp;=&nbsp;Obj()
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conversation.id&nbsp;=&nbsp;request.session.get('conversation_id',&nbsp;0)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;existing_conversation&nbsp;=&nbsp;False
+
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;post(self,&nbsp;request,&nbsp;*args,&nbsp;**kwargs):
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input_data&nbsp;=&nbsp;json.loads(request.read().decode('utf-8'))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;'text'&nbsp;not&nbsp;in&nbsp;input_data:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JsonResponse({'text':&nbsp;['The&nbsp;attribute&nbsp;"text"&nbsp;is&nbsp;required.']},&nbsp;status=400)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;response&nbsp;=&nbsp;input_data
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raw_text&nbsp;=&nbsp;input_data['text']
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;=&nbsp;interpret_dream(raw_text)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;=&nbsp;''.join(text).replace('##',&nbsp;'').strip()
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;response['text']&nbsp;=&nbsp;text
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;response_data&nbsp;=&nbsp;response
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;JsonResponse(response_data,&nbsp;status=200)</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">確認以上(1) Keras 模型前置設定、文字生成函式及 (2) API View 對接程式碼，若沒有 error 產生，我們可以直接將程式碼貼到 views.py檔案中囉！</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-weight: 700;">Step 9. 修改前端對應的後端函式 id</span></p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">var&nbsp;chatterbotUrl&nbsp;=&nbsp;'{%&nbsp;url&nbsp;"lstm"&nbsp;%}';</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><img src="https://ithelp.ithome.com.tw/upload/images/20201015/20130712ZizgSz3W0e.png" alt="https://ithelp.ithome.com.tw/upload/images/20201015/20130712ZizgSz3W0e.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"><br style="box-sizing: border-box;">▲範例如上</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-weight: 700;">Step 10. 執行 django ，開始解夢囉！</span></p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">#&nbsp;透過&nbsp;Ngrok&nbsp;套件對公開網域開啟&nbsp;Access&nbsp;的權限，檢視結果
+
+get_ipython().system_raw('./ngrok&nbsp;http&nbsp;8050&nbsp;&amp;')
+
+import&nbsp;time
+time.sleep(1)
+
+!curl&nbsp;-s&nbsp;http://localhost:4040/api/tunnels&nbsp;|&nbsp;python3&nbsp;-c&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;"import&nbsp;sys,&nbsp;json;&nbsp;print(json.load(sys.stdin)['tunnels'][0]['public_url'])"
+print("=======================================")
+!python&nbsp;/content/aifreeteam_chatbot/manage.py&nbsp;runserver&nbsp;0:8050</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">雖然我們的網頁介面仍是聊天機器人的使用介面，但是透過對話視窗，我們便可以開始透過打字輸入進行解夢喔！</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">以下為幾個解夢的範例，雖然有些看起來內容感覺蠻奇異的，但是大致上 AI LSTM 模型，是有抓到解釋夢境的基礎能力。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><img src="https://ithelp.ithome.com.tw/upload/images/20201015/20130712P3AB8OVxHp.png" alt="https://ithelp.ithome.com.tw/upload/images/20201015/20130712P3AB8OVxHp.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"><br style="box-sizing: border-box;"><img src="https://ithelp.ithome.com.tw/upload/images/20201015/20130712T8NdHZinza.png" alt="https://ithelp.ithome.com.tw/upload/images/20201015/20130712T8NdHZinza.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">而畢竟是一個簡單的、沒有太多複雜處理、尚未優化的 AI 模型，偶爾也會出現一些比較無厘頭的解夢回覆。(如下範例)</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><img src="https://ithelp.ithome.com.tw/upload/images/20201015/20130712aOGd2fkk37.png" alt="https://ithelp.ithome.com.tw/upload/images/20201015/20130712aOGd2fkk37.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"><br style="box-sizing: border-box;"><img src="https://ithelp.ithome.com.tw/upload/images/20201015/20130712bBpSS8ZaLE.png" alt="https://ithelp.ithome.com.tw/upload/images/20201015/20130712bBpSS8ZaLE.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">當然我們也能夠透過修改前端網頁(html)，讓介面更完整，使用起來更有感覺！</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><img src="https://ithelp.ithome.com.tw/upload/images/20201015/20130712LGFvnoZlkA.png" alt="https://ithelp.ithome.com.tw/upload/images/20201015/20130712LGFvnoZlkA.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">使用 colab 跟 Ngrok 工具，也能讓使用者透過手機、平板等行動設備，連線進行解夢，可說是闔家適宜的一項工具！</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">這一系列 AI 解夢大師的教學文章就到這邊，當然，此專案仍有許多地方可以優化、改善，例如：爬取更多資料、資料清理的環節更細緻、訓練模型更大、模型更複雜、超參數的微調… etc.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">未來若有機會，我們也會針對更進一步的模型(GPT2)、資料處理的細節，進行對外開課，歡迎有興趣的讀者進一步詢問粉絲專頁！<br style="box-sizing: border-box;">最後還請各位讀者，敬請持續關注自由團隊粉絲專頁及加入自由團隊學習社群！<br style="box-sizing: border-box;"><img src="https://ithelp.ithome.com.tw/upload/images/20201015/20130712xafxajausU.png" alt="https://ithelp.ithome.com.tw/upload/images/20201015/20130712xafxajausU.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"><br style="box-sizing: border-box;">▲ 使用GPT2 訓練出來的解夢模型更完整、更全面</p><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">想更深入認識 AI . FREE Team ？</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">自由團隊 官方網站：<a href="https://aifreeblog.herokuapp.com/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://aifreeblog.herokuapp.com/</a><br style="box-sizing: border-box;">自由團隊 Github：<a href="https://github.com/AI-FREE-Team/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://github.com/AI-FREE-Team/</a><br style="box-sizing: border-box;">自由團隊 粉絲專頁：<a href="https://www.facebook.com/AI.Free.Team/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.facebook.com/AI.Free.Team/</a><br style="box-sizing: border-box;">自由團隊 IG：<a href="https://www.instagram.com/aifreeteam/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.instagram.com/aifreeteam/</a><br style="box-sizing: border-box;">自由團隊 Youtube：<a href="https://www.youtube.com/channel/UCjw6Kuw3kwM_il39NTBJVTg/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.youtube.com/channel/UCjw6Kuw3kwM_il39NTBJVTg/</a></p><p><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255);">文章同步發布於：</span><a href="https://ithelp.ithome.com.tw/articles/10253376" target="_blank" style="text-decoration: underline; font-size: 18px; color: rgb(0, 112, 192);"><span style="font-size: 18px; color: rgb(0, 112, 192);">第十二屆 IT 挑戰賽部落格</span></a></p>
+
+            <p class="post-meta"><font face="微軟正黑體">由
+              <a href="#">Ken</a>
+              發布於 2020年11月28日 14:06</font></p>
+          </div>
+          <hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="/postlist">回文章列表 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    
+    
+    
+
+
+        <!-- Footer -->
+    <div align="center">
+      <div id="BA_AD_1"></div><script type="text/javascript" src="//js1.bloggerads.net/ShowBanner.aspx?blogid=20180821000002" async=""></script>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/blog">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/AI.Free.Team/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:AI.Free.Team@gmail.com">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright © AI . Free Team 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/bootstrap_blog/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/bootstrap_blog/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="/static/bootstrap_blog/js/clean-blog.min.js"></script>
+
+  
+
+
+</body></html>

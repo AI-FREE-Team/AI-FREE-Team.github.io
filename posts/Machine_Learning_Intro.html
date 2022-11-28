@@ -1,0 +1,186 @@
+<html lang="en"><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" type="text/css" href="//d1ypub5wfz82gq.cloudfront.net/AdsService/CSS/ba_ad.min.css?v=180717001"><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="//agent.aralego.com/sdk" async=""></script><script type="text/javascript" src="//js1.bloggerads.net/getads.aspx?blogid=20180821000002&amp;fid=1&amp;c=b928796018&amp;d=1&amp;sh5=1&amp;sflash=0&amp;isc=0&amp;w=477&amp;isw=0&amp;hw=478&amp;cw=0" async=""></script><script type="text/javascript" src="//d1ypub5wfz82gq.cloudfront.net/AdsService/JS/ba.min.js?v=180717001" async=""></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-124339513-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-124339513-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>【機器學習】 - 初識機器學習</title>
+    
+    
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap_blog/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="Shortcut Icon" type="image/x-icon" href="/static/images/AI_free_logo.png">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font1.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font2.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/bootstrap_blog/css/clean-blog.min.css" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="https://cdn.aralego.net/css/dev/ucfad-formats.css"></head>
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/blog">AI . FREE TEAM</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/postlist">文章列表</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacts">聯絡我們</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">會員中心</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/accounts/logout">登出</a>
+            </li><input type="hidden" name="csrfmiddlewaretoken" value="6HY7gN67YGEEyyhcVH0mQpJzq2Bbf2ZFPtZaKdhsWnMIUpO1AE0vuZBEZjRFbLiy">  
+                        
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+
+
+
+    <!-- <div>
+      <strong>Menu:</strong>
+      <ul>
+    
+    <li><a href="/accounts/email/">Change E-mail</a></li>
+    <li><a href="/accounts/logout/">Sign Out</a></li>
+     
+      </ul>
+    </div>-->
+
+    
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('/static/images/signup.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1 align="center">【機器學習】 - 初識機器學習</h1>
+              <h2 class="subheading" align="center"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">         
+              
+                <h1 class="article-hed" style="white-space: normal; box-sizing: inherit; margin: 0px 0px 0.75rem; padding: 0px; color: rgb(34, 34, 34); font-family: National; line-height: 0.9; text-rendering: auto; font-size: 4rem; letter-spacing: -0.0625rem; background-color: rgb(255, 255, 255); text-align: center;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px;">機器學習 - 初識</span></h1><p style="text-align: center;"><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/ml-01/ml1_01.png" style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px; white-space: normal; width: 70%"></p><p><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">「機器學習」(Machine Learning) 一詞，無疑是當今產官學界最火熱名詞；在「大數據」出現以前，機器學習的原名稱作「資料探勘」(Data Mining)，字面上看來，便能知悉普遍學者對此一門學問看法的改變，過去因為電腦運算能力有限，相關演算法的開發也較不成熟，因此資料探勘大多僅作為研究人員進行數據分析的工具使用，也被定義為從資料中挖出有意義的資訊，別名：資料挖礦；但隨著演算法的進化、電腦運算能力的提升，輔以大數據的力量，這些演算方法論漸趨繁雜，思考維度更多元，因此演算法推演過程漸漸無法被科學家完整地闡釋，因而被稱作「機器智慧」，即為機器學習後所擁有的智慧。</span></p><p><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"><span style="font-weight: bolder; color: rgb(33, 37, 41); background-color: rgb(255, 255, 255); font-size: 24px; box-sizing: border-box; font-family: 微軟正黑體; text-align: justify;">機器學習的運作方式</span></span></p><p><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">傳統的程式機器人屬於人造智慧 (Man-made Intelligence)，簡單來說，工程師將規則、限制、知識及相關參數完整設置過後，最後由使用者來與程式機器人互動，因此在程式設計中，必須要相當細化去設計每個細節，對應每個不同的情境，但是機器智慧 (Machine Intelligence)運作方式有別於傳統的人造智慧，將設計規則的過程轉換為機器學習的模型，再透過機器模型的反覆學習，轉換成機器智慧。(如下圖所示)</span></p><p style="text-align: center;"><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/ml-01/ml1_02.png" style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px; white-space: normal; width: 100%"></p><p><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">舉例而言，假設今天要設計一個五子棋對弈機器人，傳統<strong>人造智慧</strong>的方式，會先將五子棋規則寫進程式，並參考五子棋高手的下棋邏輯，並設計出獲勝的套路 or 設計如何阻止使用者獲勝，經過完整的設計後，基於此縝密的規則下，使用者與之對弈；而<strong>機器學習</strong>的方式則是，將大量五子棋大量的棋譜，輸入機器學習模型，讓機器主動判讀其中的規則及獲勝的方法，最後發展成機器智慧，在與使用者對弈。</span></p><p><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">下棋的例子可能稍微抽象，這邊再舉「影像辨識」為例，假設今天要設計出一個動物識別的APP，傳統人造智慧會需要擷取不同動物的特徵，從影像中找出動物的外型輪廓，設計辨識規則：幾條腿、體型大小、五官特徵、毛色等，再行輸出判定結果為貓、狗或是牛、羊；而機器智慧則為輸入大量動物的圖片至演算法中，並提供動物確切名稱給機器模型，透過不斷反覆、大量的學習後，便能從未看過的圖片中辨別認識的動物。</span></p><p><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 24px; font-weight: 700; text-align: justify; background-color: rgb(255, 255, 255);">機器學習的力量</span></span></p><p><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">在 AlphaGO 出現之前(沒聽過可參考：<a href="https://www.bnext.com.tw/article/38931/BN-2016-03-15-130754-117" target="_blank">AlphaGO打敗世界棋王，李世石</a>)，圍棋一直被科學家視為機器智慧無法超越人腦的最後一道防線，因為圍棋的排列組合極其複雜，棋局變化多端，無法以傳統程式設計出一個能打敗圍棋高手的AI，但在大數據及機器學習的推波助瀾下，機器學習所生成的智慧顯然已超越人腦的思考能力。(其運作方式暫不討論，詳閱：<a href="https://www.bnext.com.tw/article/38923/BN-2016-03-14-120814-178" target="_blank">淺談AlphaGO所涉及的深度學習技術</a></span>)</p><p><br></p><p><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 24px; font-weight: 700; text-align: justify; background-color: rgb(255, 255, 255);">經典的機器學習</span></p><p style="text-align: justify;"><span style="color:#212529;font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">機器學習一般分為兩個種類：「監督式學習」(supervised learning)、「非監督式學習」(unsupervised learning)。</span></span></p><p style="text-align: justify;"><strong><span style="color:#212529;font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">監督式學習</span></span></strong><span style="color:#212529;font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">顧名思義即為演算法中，有一位監督者(這邊稱作老師)，老師會指導機器模型一個正確答案，辨別對錯、物品種類、算式結果...等，讓機器在老師的指導經驗中學習，最後離開校園後，機器便能依據過往所學習到的經驗，辨別最佳的答案，常見的領域為分類、回歸、推薦系統。</span></span></p><p style="text-align: justify;"><strong><span style="color:#212529;font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">非監督式學習</span></span></strong><span style="color:#212529;font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">則為沒有老師指導正確的答案，舉例來說，班上的同學皆各自有愛好，在學校中便會自動組成各自的小團體，便好比非監督式學習，因為愛好相同、特質相似，而形成各自的群組，而各群組的內部成員中行為模式也相當類似，也因此當班上有轉學生加入時，機器便能依據目前班上的群組，自動分辨這位同學可能將加入哪個群組，<span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">常見的領域則為分群、關聯性分析</span>。</span></span></p><p style="text-align: center;"><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/ml-01/ml1_01.png" style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px; white-space: normal; width: 100%"></p><p style="text-align: justify;"><span style="color:#212529;font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">上圖則是經典機器學習的五個領域，以及各領域常見的演算法，下篇將介紹各演算法常見的應用領域！<span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">歡迎有興趣的讀者們，敬請鎖定自由團隊，若您有其他想法，歡迎提出您的觀點與建議，進一步與我們交流！</span><span style="box-sizing: border-box; color: rgb(33, 37, 41); font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255); font-family: &quot;Microsoft JhengHei&quot;, &quot;Microsoft YaHei&quot;;">(</span><span style="box-sizing: border-box; font-weight: bolder; color: rgb(33, 37, 41); font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255); font-family: &quot;Microsoft JhengHei&quot;, &quot;Microsoft YaHei&quot;;"><span style="box-sizing: border-box; color: rgb(127, 127, 127);"><em style="box-sizing: border-box;">AI.Free.Team@gmail.com</em></span></span><span style="box-sizing: border-box; color: rgb(33, 37, 41); font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255); font-family: &quot;Microsoft JhengHei&quot;, &quot;Microsoft YaHei&quot;;">)</span></span></span></p>
+
+            <p class="post-meta"><font face="微軟正黑體">由
+              <a href="#">Ken</a>
+              發布於 2019年3月5日 07:15</font></p>
+          </div>
+          <hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="/postlist">回文章列表 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    
+    
+    
+
+
+        <!-- Footer -->
+    <div align="center">
+      <div id="BA_AD_1"></div><script type="text/javascript" src="//js1.bloggerads.net/ShowBanner.aspx?blogid=20180821000002" async=""></script>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/blog">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/AI.Free.Team/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:AI.Free.Team@gmail.com">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright © AI . Free Team 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/bootstrap_blog/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/bootstrap_blog/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="/static/bootstrap_blog/js/clean-blog.min.js"></script>
+
+  
+
+
+</body></html>

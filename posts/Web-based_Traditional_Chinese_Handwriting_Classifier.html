@@ -1,0 +1,186 @@
+<html lang="en"><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" type="text/css" href="//d1ypub5wfz82gq.cloudfront.net/AdsService/CSS/ba_ad.min.css?v=180717001"><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="//agent.aralego.com/sdk" async=""></script><script type="text/javascript" src="//js1.bloggerads.net/getads.aspx?blogid=20180821000002&amp;fid=1&amp;c=b982048207&amp;d=1&amp;sh5=1&amp;sflash=0&amp;isc=0&amp;w=477&amp;isw=0&amp;hw=478&amp;cw=0" async=""></script><script type="text/javascript" src="//d1ypub5wfz82gq.cloudfront.net/AdsService/JS/ba.min.js?v=180717001" async=""></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-124339513-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-124339513-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>【深度學習】 - 手寫字體網頁辨識</title>
+    
+    
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap_blog/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="Shortcut Icon" type="image/x-icon" href="/static/images/AI_free_logo.png">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font1.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font2.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/bootstrap_blog/css/clean-blog.min.css" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="https://cdn.aralego.net/css/dev/ucfad-formats.css"></head>
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/blog">AI . FREE TEAM</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/postlist">文章列表</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacts">聯絡我們</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">會員中心</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/accounts/logout">登出</a>
+            </li><input type="hidden" name="csrfmiddlewaretoken" value="Pl8Vmcst8TB9Dfve4Q8puiKyOZhen5sRy79YQCDO6AJdZ623JN8y8SCDngxIjOLK">  
+                        
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+
+
+
+    <!-- <div>
+      <strong>Menu:</strong>
+      <ul>
+    
+    <li><a href="/accounts/email/">Change E-mail</a></li>
+    <li><a href="/accounts/logout/">Sign Out</a></li>
+     
+      </ul>
+    </div>-->
+
+    
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('/static/images/signup.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1 align="center">【深度學習】 - 手寫字體網頁辨識</h1>
+              <h2 class="subheading" align="center"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">         
+              
+                <p style="white-space: normal; text-align: center;"><span style="font-size: 36px;"><strong><span style="text-align: justify; background-color: rgb(255, 255, 255); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">繁體中文手寫字體 - 網頁辨識</span></strong></span><span style="font-family: 微軟正黑體; text-align: justify; background-color: rgb(255, 255, 255); font-size: 24px;"><br></span></p><h1 style="white-space: normal; text-align: center;"><span style="font-size: 24px;"><strong><span style="font-family: 微軟正黑體; text-align: justify; background-color: rgb(255, 255, 255);">你/妳 寫的字，美醜 AI 都知道...</span></strong></span></h1><p style="white-space: normal;"><span style="font-size: 24px;"><strong><span style="font-family: 微軟正黑體; text-align: justify; background-color: rgb(255, 255, 255);"></span></strong></span></p><p style="text-align: justify; white-space: normal;"><span style="font-family: 微軟正黑體; font-size: 18px; background-color: rgb(255, 255, 255);">有了初步的數據、進行特徵工程的前處理、架構深度學習模型、反覆訓練出成效理想的模型，最後，相信每個 AI 工程師就是期待自己的作品能夠實際落地應用；</span><span style="background-color: rgb(255, 255, 255); font-family: 微軟正黑體; font-size: 18px;">因此除了邊緣運算(Edge Computing)外，最能快速提供給使用者最直接、簡單的 AI 服務就是網頁瀏覽。</span></p><p style="text-align: justify; white-space: normal;"><span style="background-color: rgb(255, 255, 255); font-family: 微軟正黑體; font-size: 18px;"><br></span></p><p style="text-align: justify; white-space: normal;"><span style="background-color: rgb(255, 255, 255); font-family: 微軟正黑體; font-size: 18px;"><strong style="white-space: normal; font-size: 24px;"><span style="font-family: 微軟正黑體; text-align: justify; background-color: rgb(255, 255, 255);">作品概要</span></strong></span></p><p style="text-align: justify; white-space: normal;"><span style="background-color: rgb(255, 255, 255); font-family: 微軟正黑體; font-size: 18px;">此作品為<a href="https://aifreeblog.herokuapp.com/posts/67/Traditional_Chinese_Handwriting_Dataset/" target="_blank" style="color: rgb(0, 112, 192); text-decoration: underline;"><span style="background-color: rgb(255, 255, 255); font-family: 微軟正黑體; font-size: 18px; color: rgb(0, 112, 192);">繁體中文手寫資料集</span></a>之衍生應用，透過網頁瀏覽器進行 AI 模型的訓練，並即時性地視覺化呈現訓練的實際狀況，並將模型部署在網頁上，以作為使用者手寫字體辨識用。</span></p><p style="text-align: justify; white-space: normal;"><span style="background-color: rgb(255, 255, 255); font-family: 微軟正黑體; font-size: 18px;">※使用須知：每次打開此作品網頁，即會開始 training 一個新的模型，會使用到使用者電腦的運算力及電腦記憶體，訓練完成後，才能使用手寫辨識功能。 (此作品目前只 focus 電腦使用者，手機版網頁的使用暫不支持；前端開發沒花太多心思...請大家見諒)</span></p><p style="text-align: justify; white-space: normal;"><span style="background-color: rgb(255, 255, 255); font-family: 微軟正黑體; font-size: 18px;">作品連結：<a href="https://traditional-chinese-handwriting.github.io/" target="_blank" style="color: rgb(0, 112, 192); text-decoration: underline;"><span style="background-color: rgb(255, 255, 255); font-family: 微軟正黑體; font-size: 18px; color: rgb(0, 112, 192);">https://traditional-chinese-handwriting.github.io/</span></a></span></p><p style="text-align: justify; white-space: normal;"><br></p><p style="text-align: justify; white-space: normal;"><strong style="font-family: 微軟正黑體; text-align: justify; white-space: normal; font-size: 24px;"><span style="background-color: rgb(255, 255, 255);">背景知識</span></strong></p><p style="text-align: justify;"><span style="font-family: 微軟正黑體; font-size: 18px; background-color: rgb(255, 255, 255);">本作品開發須具備以下開發知識：</span></p><p style="text-align: justify;"><span style="font-family: 微軟正黑體; font-size: 18px; background-color: rgb(255, 255, 255);">1. 圖像處理的基礎知識 (RGB, np.array)</span></p><p style="text-align: justify;"><span style="font-family: 微軟正黑體; font-size: 18px; background-color: rgb(255, 255, 255);">2. AI 影像辨識基礎知識 (CNN)</span></p><p style="text-align: justify;"><span style="font-family: 微軟正黑體; font-size: 18px; background-color: rgb(255, 255, 255);">3. AI 開發框架知識 (Tensorflow, Keras)</span></p><p style="text-align: justify;"><span style="font-family: 微軟正黑體; font-size: 18px; background-color: rgb(255, 255, 255);">4. 網頁開發基礎 (html, css, javascript)</span></p><p style="text-align: justify;"><span style="font-family: 微軟正黑體; font-size: 18px; background-color: rgb(255, 255, 255);">5. Tensorflow.js API&nbsp;</span></p><p><br></p><p><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"><strong style="text-align: justify; white-space: normal; font-family: 微軟正黑體; font-size: 24px;"><span style="background-color: rgb(255, 255, 255);">開發素材</span></strong></span></p><p><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">1. Coursera Deeplearning.ai 專業課程：<a href="https://www.coursera.org/specializations/tensorflow-data-and-deployment" target="_self" style="color: rgb(0, 112, 192); text-decoration: underline;"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255); color: rgb(0, 112, 192);">Data and Deployment Specialization</span></a> - <a href="https://www.coursera.org/learn/browser-based-models-tensorflow/home/welcome" target="_blank" style="color: rgb(0, 112, 192); text-decoration: underline;"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255); color: rgb(0, 112, 192);">Browser based Models with Tensorflow.js</span></a> (<a href="https://www.coursera.org/learn/browser-based-models-tensorflow/home/week/2" target="_blank" style="color: rgb(0, 112, 192); text-decoration: underline;"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255); color: rgb(0, 112, 192);">第二週課程作業</span></a>)</span></p><p><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">2. <a href="https://github.com/AI-FREE-Team/Traditional-Chinese-Handwriting-Dataset" target="_blank" style="color: rgb(0, 112, 192); text-decoration: underline;"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255); color: rgb(0, 112, 192);">繁體中文手寫資料集</span></a></span></p><p style="text-align: justify; "><span style="font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">3. <a href="https://github.com/AI-FREE-Team/Handwriting-Chinese-Characters-Recognition" target="_blank" style="color: rgb(0, 112, 192); text-decoration: underline;"><span style="font-size: 18px; background-color: rgb(255, 255, 255); color: rgb(0, 112, 192);">繁體中文手寫辨識</span></a></span></span></p><p style="text-align: justify; "><span style="font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><br></span></span></p><p style="text-align: justify; "><span style="font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><strong style="font-family: 微軟正黑體; text-align: justify; white-space: normal; font-size: 24px;"><span style="background-color: rgb(255, 255, 255);">開發流程</span></strong></span></span></p><p style="text-align: justify; "><span style="font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">1. 從資料集中抓取所需的字集</span></span></span></p><p style="text-align: justify;"><span style="font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">2. 將資料集轉換為 Sprite Sheet 作為網頁 training 用，準備 label Data (<a href="https://www.coursera.org/lecture/browser-based-models-tensorflow/using-the-sprite-sheet-p3TOe" target="_blank" style="color: rgb(0, 112, 192); text-decoration: underline;"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255); color: rgb(0, 112, 192);">Sprite Sheet 介紹</span></a>)</span></span></span></p><p style="text-align: justify;"><span style="font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">3. 修改讀取數據及模型訓練、部署的 javascript code</span></span></span></p><p style="text-align: justify;"><span style="font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">4. 前端修改成自己喜歡的樣子</span></span></span></p><p style="text-align: justify;"><span style="font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">5. Done!</span></span></span></p><p style="text-align: justify;"><span style="font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"><br></span></span></span></p><p style="text-align: justify;"><span style="font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"></span></span></span></p><p style="white-space: normal;"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"><strong style="font-size: 24px;">專案成果</strong></span></p><p style="white-space: normal;"><br></p><p style="white-space: normal;"><strong><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/tchc-ke/%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E6%89%8B%E5%AF%AB%E8%BE%A8%E8%AD%98_%E4%BA%BA.gif" style="width: 100%" alt="繁體中文手寫辨識_人"></strong><br></p><p style="white-space: normal;"><strong><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/tchc-ke/%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E6%89%8B%E5%AF%AB%E8%BE%A8%E8%AD%98_%E5%B7%A5.gif" style="width: 100%" alt="繁體中文手寫辨識_工"></strong><br></p><p style="white-space: normal;"><strong><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/tchc-ke/%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E6%89%8B%E5%AF%AB%E8%BE%A8%E8%AD%98_%E6%99%BA.gif" style="width: 100%" alt="繁體中文手寫辨識_智"></strong><br></p><p style="white-space: normal;"><strong><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/tchc-ke/%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E6%89%8B%E5%AF%AB%E8%BE%A8%E8%AD%98_%E6%85%A7.gif" style="width: 100%" alt="繁體中文手寫辨識_慧"></strong><br></p><p style="text-align: justify;"><span style="font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"><br></span></span></span></p><p style="text-align: justify;"><span style="font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"></span></span></span></p><p style="white-space: normal;"><span style="font-size: 20px;"><strong style="font-size: 24px;"><span style="font-size: 20px; font-family: 微軟正黑體; text-align: justify;"><strong style="font-size: 24px;">資料集授權</strong></span></strong></span><br></p><p style="margin-top: 0px; margin-bottom: 16px; white-space: normal; box-sizing: border-box; color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; background-color: rgb(255, 255, 255);"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nofollow" style="box-sizing: border-box; background-color: initial; color: rgb(3, 102, 214); text-decoration-line: none;"><img alt="Creative Commons License" src="https://camo.githubusercontent.com/d3fb68045681158e02d4e64ac857f65ceefd6ba5/68747470733a2f2f692e6372656174697665636f6d6d6f6e732e6f72672f6c2f62792d6e632d73612f332e302f74772f38387833312e706e67" data-canonical-src="https://i.creativecommons.org/l/by-nc-sa/3.0/tw/88x31.png" style="box-sizing: initial; border-style: none; max-width: 100%;"></a><span style="font-family: 微軟正黑體; font-size: 18px; text-align: justify;">&nbsp;<span style="font-size: 14px;">(CC BY-NC-SA 4.0)<br style="box-sizing: border-box;">本資料集適用&nbsp;</span></span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nofollow" style="box-sizing: border-box; color: rgb(3, 102, 214); font-family: 微軟正黑體; text-align: justify; font-size: 14px;">Attribution-NonCommercial-ShareAlike 4.0 International</a><span style="font-family: 微軟正黑體; text-align: justify; font-size: 14px;">&nbsp;授權。<br style="box-sizing: border-box;">The dataset applied&nbsp;</span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nofollow" style="box-sizing: border-box; color: rgb(3, 102, 214); font-family: 微軟正黑體; text-align: justify; font-size: 14px;">Attribution-NonCommercial-ShareAlike 4.0 International</a><span style="font-family: 微軟正黑體; text-align: justify; font-size: 14px;">&nbsp;license.</span></p><p style="margin-top: 0px; margin-bottom: 16px; white-space: normal; box-sizing: border-box; color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; background-color: rgb(255, 255, 255);"><span style="font-family: 微軟正黑體; text-align: justify; font-size: 14px;">※ 使用、改作、分享請附上以下資訊：</span></p><ul class=" list-paddingleft-2" style="margin-bottom: 16px; width: 934.8px; padding-left: 2em; white-space: normal; box-sizing: border-box; color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; background-color: rgb(255, 255, 255);"><li><p style="margin-top: 16px; margin-bottom: 16px; box-sizing: border-box;"><span style="font-family: 微軟正黑體; text-align: justify; font-size: 14px;">本數據集由 AI . FREE Team 改作開發自 [STUST EECS_Chinese MNIST(總集)]。如有使用、改作、分享，請註明出處及此訊息。</span></p></li><li><p style="margin-top: 16px; margin-bottom: 16px; box-sizing: border-box;"><span style="font-family: 微軟正黑體; text-align: justify; font-size: 14px;">The dataset is AI . FREE Team development from [STUST EECS_Chinese MNIST(總集)]. If used, modified, or shared, please cite the source and the mesage.</span></p></li><li><p style="margin-top: 16px; margin-bottom: 16px; box-sizing: border-box;"><span style="font-family: 微軟正黑體; text-align: justify; font-size: 14px;">(source:&nbsp;</span><a href="https://github.com/AI-FREE-Team/Traditional-Chinese-Handwriting-Dataset" style="box-sizing: border-box; color: rgb(3, 102, 214); font-family: 微軟正黑體; text-align: justify; font-size: 14px;">https://github.com/AI-FREE-Team/Traditional-Chinese-Handwriting-Dataset</a><span style="font-family: 微軟正黑體; text-align: justify; font-size: 14px;">&nbsp;)</span></p></li></ul>
+
+            <p class="post-meta"><font face="微軟正黑體">由
+              <a href="#">Ken</a>
+              發布於 2021年4月16日 19:54</font></p>
+          </div>
+          <hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="/postlist">回文章列表 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    
+    
+    
+
+
+        <!-- Footer -->
+    <div align="center">
+      <div id="BA_AD_1" class="Ba_Ad"><div id="ba_ad_09629637251927898" class="AdItem Ad_450x120"><div class="AdBox"><iframe width="450" height="120" lz-src="//d1ypub5wfz82gq.cloudfront.net/AdsService/Apps/ifpic.min.html?img=%2F%2Fd1ypub5wfz82gq.cloudfront.net%2FAdsService%2FAdsMaterial%2F2022%2F19412%2F4762c65d2953497cbbf4ec37db22b888.jpg&amp;clickTAG=%2F%2Fjs1.bloggerads.net%2FClick%2F1542940966.PfbdOKRI%2F20070610000001%2F20180821000002%2F1%2F63805254516%2F19412%2F1&amp;r=mH0ZipBAf7MNTLaHBl086hwcUCgTXeVGYWxPkzoOoQluwSX9LVHnSXcsCzD7mcCe" frameborder="0" border="0" cellspacing="0" allowtransparency="true" scrolling="no" id="ba_ad_09629637251927898_0671853592617897"></iframe></div><div class="Tag"><a href="http://www.bloggerads.net" title="BloggerAds 部落格行銷" target="_blank">BloggerAds 部落格行銷</a></div></div></div><script type="text/javascript" src="//js1.bloggerads.net/ShowBanner.aspx?blogid=20180821000002" async=""></script>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/blog">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/AI.Free.Team/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:AI.Free.Team@gmail.com">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright © AI . Free Team 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/bootstrap_blog/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/bootstrap_blog/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="/static/bootstrap_blog/js/clean-blog.min.js"></script>
+
+  
+
+
+</body></html>

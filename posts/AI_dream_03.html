@@ -1,0 +1,259 @@
+<html lang="en"><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" type="text/css" href="//d1ypub5wfz82gq.cloudfront.net/AdsService/CSS/ba_ad.min.css?v=180717001"><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="//agent.aralego.com/sdk" async=""></script><script type="text/javascript" src="//js1.bloggerads.net/getads.aspx?blogid=20180821000002&amp;fid=1&amp;c=b1384548337&amp;d=1&amp;sh5=1&amp;sflash=0&amp;isc=0&amp;w=477&amp;isw=0&amp;hw=478&amp;cw=0" async=""></script><script type="text/javascript" src="//d1ypub5wfz82gq.cloudfront.net/AdsService/JS/ba.min.js?v=180717001" async=""></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-124339513-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-124339513-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Day03 - Python Basics III.</title>
+    
+    
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap_blog/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="Shortcut Icon" type="image/x-icon" href="/static/images/AI_free_logo.png">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font1.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font2.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/bootstrap_blog/css/clean-blog.min.css" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="https://cdn.aralego.net/css/dev/ucfad-formats.css"></head>
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/blog">AI . FREE TEAM</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/postlist">文章列表</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacts">聯絡我們</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">會員中心</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/accounts/logout">登出</a>
+            </li><input type="hidden" name="csrfmiddlewaretoken" value="w5bOrKpG1BHeKCOTh79Ub73sDroMKQQsfRcRVaA1ZiPi6tlIW493PHVxcIEgGz9l">  
+                        
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+
+
+
+    <!-- <div>
+      <strong>Menu:</strong>
+      <ul>
+    
+    <li><a href="/accounts/email/">Change E-mail</a></li>
+    <li><a href="/accounts/logout/">Sign Out</a></li>
+     
+      </ul>
+    </div>-->
+
+    
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('/static/images/signup.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1 align="center">Day03 - Python Basics III.</h1>
+              <h2 class="subheading" align="center"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">         
+              
+                <h1 style="white-space: normal; box-sizing: border-box; margin: 30px 0px 14px; font-size: 30px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); background-color: rgb(255, 255, 255); text-align: center;"><strong>斜槓學習 – 零基礎成為 AI 解夢大師秘笈</strong></h1><p style="text-align: center;"><strong><span style="box-sizing: border-box; font-weight: bolder; color: rgb(33, 37, 41); font-family: Lora, &quot;Times New Roman&quot;, &quot;Microsoft JhengHei&quot;, serif; font-size: 24px; text-align: center; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif;">本文作者：Lulu</span></span></strong></p><h2 style="white-space: normal; box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; background-color: rgb(255, 255, 255);">前言</h2><h3 style="white-space: normal; box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; background-color: rgb(255, 255, 255);">系列文章簡介</h3><p style="margin-top: 0px; margin-bottom: 26px; white-space: normal; box-sizing: border-box; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">自由團隊將從0到1 手把手教各位讀者學會(1)Python基礎語法、(2)Python Web 網頁開發框架 – Django&nbsp;、(3)Python網頁爬蟲 – 周易解夢網、(4)Tensorflow AI語言模型基礎與訓練 – LSTM、(5)實際部屬AI解夢模型到Web框架上。</p><h3 style="white-space: normal; box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; background-color: rgb(255, 255, 255);">為什麼技術要從零開始寫起</h3><p style="margin-top: 0px; margin-bottom: 26px; white-space: normal; box-sizing: border-box; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">自由團隊的成立宗旨為開發AI/新科技的學習資源，提供各領域的學習者能夠跨域學習資料科學，並透過自主學習發展協槓職涯，結合智能應用到各式領域，無論是文、法、商、管、醫領域的朋友，都可以自由的學習AI技術。</p><h2 style="white-space: normal; box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; background-color: rgb(255, 255, 255);">教學開始</h2><p style="margin-top: 0px; margin-bottom: 26px; white-space: normal; box-sizing: border-box; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">AI . FREE Team 讀者專屬福利 →&nbsp;<a href="https://github.com/AI-FREE-Team/Python-Basics" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;"><span style="box-sizing: border-box; font-weight: 700;">Python Basics 免費學習資源</span></a><br style="box-sizing: border-box;">(<span style="box-sizing: border-box; font-weight: 700;">歡迎讀者們在讀文章時，搭配實作 &amp; Youtube 教學影片，可達到最大的學習效益喔！</span>)</p><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">Python Basics 03</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">這一單元會快速帶過常用的 Python 函式及一些功能，不太熟悉沒關係，之後常常用到就會囉！就讓我們先從基礎的知識學起！</p><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">1. 條件式 if – else</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">條件語法是通過一個或多個條件的執行結果（True或者False），來決定接下來要執行哪一段程式碼。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">條件語句的執行過程:</p><blockquote style="box-sizing: border-box; padding: 10px 20px; margin: 0px 0px 20px; font-size: 17.5px; border-left: 5px solid rgb(203, 214, 223); color: rgb(96, 104, 112); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 17px; line-height: 1.7;">if 判斷條件：<br style="box-sizing: border-box;">&nbsp; &nbsp; &nbsp; &lt;執行程式碼……&gt;<br style="box-sizing: border-box;">else：<br style="box-sizing: border-box;">&nbsp; &nbsp; &nbsp; &lt;執行程式碼……&gt;</p></blockquote><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">x&nbsp;=&nbsp;1
+
+if&nbsp;x&nbsp;==&nbsp;1:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;判斷變數是否爲&nbsp;1
+&nbsp;&nbsp;print('hi!')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;輸出判斷結果
+else:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;否則
+&nbsp;&nbsp;print('None')&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;輸出判斷結果</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">if 語句的判斷條件可以用&gt;（大於）、&lt;(小於)、==（等於）、&gt;=（大於等於）、&lt;=（小於等於）來進行判斷。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">當判斷條件有多個邏輯時，可使用 elif 來增加判斷的條件：</p><blockquote style="box-sizing: border-box; padding: 10px 20px; margin: 0px 0px 20px; font-size: 17.5px; border-left: 5px solid rgb(203, 214, 223); color: rgb(96, 104, 112); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 17px; line-height: 1.7;">if 判斷條件1:<br style="box-sizing: border-box;">&nbsp; &nbsp; &nbsp; &lt;執行<span style="color: rgb(96, 104, 112); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 17px; background-color: rgb(255, 255, 255);">程式碼</span>1……&gt;<br style="box-sizing: border-box;">elif 判斷條件2:<br style="box-sizing: border-box;">&nbsp; &nbsp; &nbsp; &lt;執行<span style="color: rgb(96, 104, 112); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 17px; background-color: rgb(255, 255, 255);">程式碼</span>2……&gt;<br style="box-sizing: border-box;">elif 判斷條件3:<br style="box-sizing: border-box;">&nbsp; &nbsp; &nbsp; &lt;執行<span style="color: rgb(96, 104, 112); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 17px; background-color: rgb(255, 255, 255);">程式碼</span>3……&gt;<br style="box-sizing: border-box;">else:<br style="box-sizing: border-box;">&nbsp; &nbsp; &nbsp; &lt;執行<span style="color: rgb(96, 104, 112); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 17px; background-color: rgb(255, 255, 255);">程式碼</span>4……&gt;</p></blockquote><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">number&nbsp;=&nbsp;21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+if&nbsp;number&nbsp;&gt;=&nbsp;18:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;判斷&nbsp;number&nbsp;是否大於&nbsp;18
+&nbsp;&nbsp;print('eighteen')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+elif&nbsp;number&nbsp;==&nbsp;21:&nbsp;&nbsp;&nbsp;#&nbsp;判斷&nbsp;number&nbsp;是否等於&nbsp;21
+&nbsp;&nbsp;print('twenty-one')&nbsp;
+&nbsp;&nbsp;
+elif&nbsp;number&nbsp;&gt;=&nbsp;1:&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;判斷&nbsp;number&nbsp;是否大於等於&nbsp;1
+&nbsp;&nbsp;print('one')&nbsp;
+&nbsp;&nbsp;
+else:
+&nbsp;&nbsp;print('not')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;條件均不成立時輸出</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">依照上述範例，因滿足大於 18 的條件，所以程式碼會優先輸出 "eighteen" 。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">若今天要判斷多個條件同時滿足，我們可以使用 and</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">num&nbsp;=&nbsp;9
+if&nbsp;num&nbsp;&gt;=&nbsp;0&nbsp;and&nbsp;num&nbsp;&lt;=&nbsp;10:&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;判斷值是否在0~10之間
+&nbsp;&nbsp;print('between&nbsp;0&nbsp;and&nbsp;10')</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">輸出結果：between 0 and 10。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">如果條件判斷為取其一滿足即可，可以使用 or</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">number&nbsp;=&nbsp;10
+if&nbsp;number&nbsp;&lt;&nbsp;0&nbsp;or&nbsp;number&nbsp;&gt;&nbsp;10:&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;判斷&nbsp;number&nbsp;是否小於0或大於10
+&nbsp;&nbsp;print('less&nbsp;than&nbsp;0&nbsp;or&nbsp;more&nbsp;than&nbsp;10')
+else:
+&nbsp;&nbsp;print('undefine')</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">輸出結果：undefine。</p><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">2. while迴圈</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">while 用於 ”反覆” 執行，意即在判斷條件下，反覆執行某段程式碼，以<span style="box-sizing: border-box; font-weight: 700;">重複處理相同的任務</span>。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">其程式碼編寫的結構為：</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">while(繼續的條件)：
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;當條件成立時，執行的程式碼&gt;</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">while 繼續的條件成立，就執行程式碼。執行完畢後，回到 while 再次判斷條件是否成立，若判斷成立就再次執行程式碼，執行完畢後，回到 while 再次判斷條件是否成立，...直到條件不成立，就跳脫 while 迴圈結束。</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">c&nbsp;=&nbsp;0
+while&nbsp;(c&nbsp;&lt;&nbsp;9):
+&nbsp;&nbsp;print(c)
+&nbsp;&nbsp;c&nbsp;=&nbsp;c&nbsp;+&nbsp;1</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">一開始 c 為 0，while 迴圈設定：當c小於9，這個條件成立，因此他會print出c，然後再將c+1；再將新的c，也就是c+1，再回到while的條件進行判斷：當c小於9，條件依舊成立，因為1 &lt; 9，因此他會print出新的c，然後c再+1，一直反覆上面的邏輯，while 會一直執行直到 c=9，判斷條件不成立時，停止迴圈。<br></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">其他在 while 常見的程式碼有 :</p><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>continue 跳過該次迴圈</p></li><li><p>break 退出迴圈</p></li><li><p>"判斷條件"若為常數，表示循環必定成立，如下範例：</p></li></ul><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">i&nbsp;=&nbsp;1
+while&nbsp;i&nbsp;&lt;&nbsp;10:&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;i&nbsp;+=&nbsp;1
+&nbsp;&nbsp;if(i%2)&gt;&nbsp;0:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;非雙數時跳過輸出
+&nbsp;&nbsp;&nbsp;&nbsp;continue
+&nbsp;&nbsp;&nbsp;&nbsp;print(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;輸出雙數2、4、6、8、10
+
+j&nbsp;=&nbsp;1
+while&nbsp;1:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;循環條件爲1必定成立
+&nbsp;&nbsp;print(j)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;輸出1~10
+&nbsp;&nbsp;j&nbsp;+=&nbsp;1
+&nbsp;&nbsp;if&nbsp;j&nbsp;&gt;&nbsp;5:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;當i大於10時跳出循環
+&nbsp;&nbsp;&nbsp;&nbsp;break
+print('end')</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">因此若不使用break跳出迴圈，電腦就會持續反覆執行，也就是無窮迴圈(如下所示)：</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">inifinty&nbsp;=&nbsp;1
+num&nbsp;=&nbsp;inifinty
+while&nbsp;inifinty&nbsp;==&nbsp;1&nbsp;:&nbsp;&nbsp;#&nbsp;該條件永遠爲true，迴圈將無限執行下去
+&nbsp;&nbsp;num&nbsp;=&nbsp;num&nbsp;+&nbsp;1
+&nbsp;&nbsp;print("You&nbsp;entered:&nbsp;",num)&nbsp;
+&nbsp;&nbsp;
+print("Never!")
+#&nbsp;記得break迴圈&nbsp;(ctrl+break,&nbsp;ctrl+C...)</pre><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">3. For 迴圈</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">for 迴圈會依序跑過所有資料，如一個list、一個字符串、或是一個數字範圍(range)。</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">for&nbsp;i&nbsp;in&nbsp;'New&nbsp;York':&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;一個字幅串的範例，輸出會是一行一個字母
+&nbsp;&nbsp;&nbsp;print('當前字母&nbsp;:',i)&nbsp;#&nbsp;一個list&nbsp;的範例，輸出會是一行一個項目
+
+countries&nbsp;=&nbsp;['Detroit','Arizona','Georgia']
+
+for&nbsp;country&nbsp;in&nbsp;countries:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;print('當前地名&nbsp;:',country)</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">for後面的代號可以依據自己的偏好設定，但此代號仍屬於全域變數(global variable)，而非區域變數(local variable)；因此在使用上，千萬不用遇到已使用過的變數代號。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">下面是一個判斷質數與否的程式碼，順便示範 for 搭配 else &amp; range 的用法，有點複雜，若有不理解的部分也歡迎隨時與我們反饋喔！</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">for&nbsp;num&nbsp;in&nbsp;range(2,20):&nbsp;&nbsp;&nbsp;#&nbsp;num&nbsp;迭代&nbsp;2&nbsp;到&nbsp;19&nbsp;(loop&nbsp;num&nbsp;=&nbsp;2&nbsp;到&nbsp;num&nbsp;=&nbsp;19)
+&nbsp;&nbsp;&nbsp;for&nbsp;i&nbsp;in&nbsp;range(2,num):&nbsp;#&nbsp;i&nbsp;迭代&nbsp;2&nbsp;到&nbsp;num&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;num%i&nbsp;==&nbsp;0:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;判斷&nbsp;num&nbsp;是否可以被&nbsp;i&nbsp;(因數)&nbsp;整除
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j=num/i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;若有&nbsp;i&nbsp;可以整除&nbsp;num，計算&nbsp;j&nbsp;(另一個因數)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(num,"等於",i,"*",j)&nbsp;#&nbsp;輸出數值的乘積
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;跳出當前&nbsp;for&nbsp;迴圈(for&nbsp;i&nbsp;in&nbsp;range(2,num))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;回到上一個外層的迴圈(for&nbsp;num&nbsp;in&nbsp;range(2,20))
+&nbsp;&nbsp;&nbsp;else:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;當&nbsp;for&nbsp;迴圈中(for&nbsp;i&nbsp;in&nbsp;range(2,num))，並無判斷出因數，即透過else輸出質數
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(num,&nbsp;'是一個質數')</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">for 迴圈是 Python 常見的應用，巢狀迴圈(Nested loop) - 兩個for迴圈以上組成，雖然好用，但Python屬於高階語言，for的運算效能非常慢，因此還是盡量避免過多for 迴圈的應用，否則程式執行會消耗大量的運算資源與時間。</p><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">4. def 自定義函式</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">Python提供了許多內建函數，例如 print()，若有需要自己定義的函數，我們就能使用def來達成。<br style="box-sizing: border-box;">以下是簡單的規則：<br style="box-sizing: border-box;">• 以 def 開頭，後接函式名稱和小括號()<br style="box-sizing: border-box;">• 任何要傳入的參數/變數必須放在圓括號中間，並以逗號分隔。<br style="box-sizing: border-box;">• 最後以 return 為函式輸出結果。沒有輸出值的函式可以 return None 或不寫 return，不回傳任何值。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">來看看簡單的範例 :</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">def&nbsp;printinfo(name,age=25):
+&nbsp;&nbsp;&nbsp;print(name)
+&nbsp;&nbsp;&nbsp;print(age)&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;return&nbsp;None&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+#使用printinfo自定意函式
+printinfo(age=33,name="Anthony")
+printinfo(name="miki")</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">產生的結果如下：</p><blockquote style="box-sizing: border-box; padding: 10px 20px; margin: 0px 0px 20px; font-size: 17.5px; border-left: 5px solid rgb(203, 214, 223); color: rgb(96, 104, 112); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 17px; line-height: 1.7;">Anthony<br style="box-sizing: border-box;">33<br style="box-sizing: border-box;">miki<br style="box-sizing: border-box;">25</p></blockquote><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">5. From … import 載入套件</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">最後簡單說明載入套件的語法，順便介紹常用的套件，"from ... import" 和 import 都是使用 module 的方式；Python 內的 module 指的就是檔案，只不過這個檔案內通常有許多的函式供開發者做使用。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">import 相當於導入的是一个資料夾，透過相對路徑使用 module 中的哪一個 function，也需要額外進行定義。</p><blockquote style="box-sizing: border-box; padding: 10px 20px; margin: 0px 0px 20px; font-size: 17.5px; border-left: 5px solid rgb(203, 214, 223); color: rgb(96, 104, 112); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 17px; line-height: 1.7;">import 模組名稱<br style="box-sizing: border-box;">模組名稱.xxx # xxx 即為欲使用的 function 名稱</p></blockquote><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">"from…import" 可直接從模組中，導入特定的 function</p><blockquote style="box-sizing: border-box; padding: 10px 20px; margin: 0px 0px 20px; font-size: 17.5px; border-left: 5px solid rgb(203, 214, 223); color: rgb(96, 104, 112); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 17px; line-height: 1.7;">from 模組名稱 import xxx</p></blockquote><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">本次 IT鐵人挑戰賽，我們後續會常使用的套件如下：</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">#爬蟲
+import&nbsp;requests
+from&nbsp;bs4&nbsp;import&nbsp;BeautifulSoup</pre><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">#資料分析/處理
+import&nbsp;pandas&nbsp;as&nbsp;pd
+import&nbsp;numpy&nbsp;as&nbsp;np</pre><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">#excel處理
+import&nbsp;xlwt
+import&nbsp;xlrd</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">後續我們如何使用這些套件，就讓我們繼續看下去！</p><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">邁向 AI 解夢大師 - 第三天</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">第三天的課程，我們學習到 Python 簡單幾個基礎程式邏輯、函示定義...，是不是發現 Python 跟英文語句的表達非常相似呢？若想學習一些更細節的語法，請參考：<a href="https://colab.research.google.com/github/AI-FREE-Team/Python-Basics/blob/master/documents/Lesson10%20If-else.ipynb" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;"><span style="box-sizing: border-box; font-weight: 700;">Python Basics 免費學習資源</span></a></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">每天一點一滴跟著自由團隊一起學習，讓我們從0基礎，三十天後一同成為 AI 解夢大師！</p><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">想更深入認識 AI . FREE Team ？</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">自由團隊 官方網站：<a href="https://aifreeblog.herokuapp.com/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://aifreeblog.herokuapp.com/</a><br style="box-sizing: border-box;">自由團隊 Github：<a href="https://github.com/AI-FREE-Team/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://github.com/AI-FREE-Team/</a><br style="box-sizing: border-box;">自由團隊 粉絲專頁：<a href="https://www.facebook.com/AI.Free.Team/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.facebook.com/AI.Free.Team/</a><br style="box-sizing: border-box;">自由團隊 IG：<a href="https://www.instagram.com/aifreeteam/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.instagram.com/aifreeteam/</a><br style="box-sizing: border-box;">自由團隊 Youtube：<a href="https://www.youtube.com/channel/UCjw6Kuw3kwM_il39NTBJVTg/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.youtube.com/channel/UCjw6Kuw3kwM_il39NTBJVTg/</a></p><p><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255);">文章同步發布於：</span><a href="https://ithelp.ithome.com.tw/articles/10239239" target="_blank" textvalue="第十二屆 IT 挑戰賽部落格" style="font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; color: rgb(0, 112, 192);">第十二屆 IT 挑戰賽部落格</a></p><p><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255);"></span><span style="box-sizing: border-box; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255);">(</span><a href="https://aifreeblog.herokuapp.com/posts/107/AI_dream_04/" target="_blank" style="text-decoration: underline; box-sizing: border-box; color: rgb(0, 112, 192); font-size: 18px;"><span style="box-sizing: border-box; color: rgb(0, 112, 192); font-size: 18px;">繼續閱讀下一篇教學...</span></a><span style="box-sizing: border-box; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255);">)</span></p>
+
+            <p class="post-meta"><font face="微軟正黑體">由
+              <a href="#">Ken</a>
+              發布於 2020年11月10日 12:03</font></p>
+          </div>
+          <hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="/postlist">回文章列表 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    
+    
+    
+
+
+        <!-- Footer -->
+    <div align="center">
+      <div id="BA_AD_1" class="Ba_Ad"><div id="ba_ad_07480013271374828" class="AdItem Ad_450x120"><div class="AdBox"><iframe width="450" height="120" lz-src="//d1ypub5wfz82gq.cloudfront.net/AdsService/Apps/ifpic.min.html?img=%2F%2Fd1ypub5wfz82gq.cloudfront.net%2FAdsService%2FAdsMaterial%2F2021%2F19331%2Fd2ae5e5d8e8745c1b04db02c82886d37.gif&amp;clickTAG=%2F%2Fjs1.bloggerads.net%2FClick%2F1543488358.gfCaupwJ%2F20070610000001%2F20180821000002%2F1%2F63805255064%2F19331%2F1&amp;r=mH0ZipBAf7MNTLaHBl086hwcUCgTXeVGYWxPkzoOoQluwSX9LVHnSXcsCzD7mcCe" frameborder="0" border="0" cellspacing="0" allowtransparency="true" scrolling="no" id="ba_ad_07480013271374828_09720294570886376"></iframe></div><div class="Tag"><a href="http://www.bloggerads.net" title="BloggerAds 部落格行銷" target="_blank">BloggerAds 部落格行銷</a></div></div></div><script type="text/javascript" src="//js1.bloggerads.net/ShowBanner.aspx?blogid=20180821000002" async=""></script>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/blog">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/AI.Free.Team/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:AI.Free.Team@gmail.com">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright © AI . Free Team 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/bootstrap_blog/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/bootstrap_blog/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="/static/bootstrap_blog/js/clean-blog.min.js"></script>
+
+  
+
+
+</body></html>

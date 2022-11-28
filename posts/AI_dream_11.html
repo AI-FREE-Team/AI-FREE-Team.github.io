@@ -1,0 +1,197 @@
+<html lang="en"><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" type="text/css" href="//d1ypub5wfz82gq.cloudfront.net/AdsService/CSS/ba_ad.min.css?v=180717001"><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="//agent.aralego.com/sdk" async=""></script><script type="text/javascript" src="//js1.bloggerads.net/getads.aspx?blogid=20180821000002&amp;fid=1&amp;c=b1712209324&amp;d=1&amp;sh5=1&amp;sflash=0&amp;isc=0&amp;w=477&amp;isw=0&amp;hw=478&amp;cw=0" async=""></script><script type="text/javascript" src="//d1ypub5wfz82gq.cloudfront.net/AdsService/JS/ba.min.js?v=180717001" async=""></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-124339513-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-124339513-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Day11 - Django VIII.</title>
+    
+    
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap_blog/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="Shortcut Icon" type="image/x-icon" href="/static/images/AI_free_logo.png">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font1.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font2.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/bootstrap_blog/css/clean-blog.min.css" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="https://cdn.aralego.net/css/dev/ucfad-formats.css"></head>
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/blog">AI . FREE TEAM</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/postlist">文章列表</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacts">聯絡我們</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">會員中心</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/accounts/logout">登出</a>
+            </li><input type="hidden" name="csrfmiddlewaretoken" value="7rIyd1mDpNMCeiI4v2reUBMC0Uou3HLiQdJBHrxYnuUGA9fTaZrnybEHzbEYZq4b">  
+                        
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+
+
+
+    <!-- <div>
+      <strong>Menu:</strong>
+      <ul>
+    
+    <li><a href="/accounts/email/">Change E-mail</a></li>
+    <li><a href="/accounts/logout/">Sign Out</a></li>
+     
+      </ul>
+    </div>-->
+
+    
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('/static/images/signup.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1 align="center">Day11 - Django VIII.</h1>
+              <h2 class="subheading" align="center"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">         
+              
+                <h1 style="white-space: normal; box-sizing: border-box; margin: 30px 0px 14px; font-size: 30px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); background-color: rgb(255, 255, 255); text-align: center;"><strong>斜槓學習 – 零基礎成為 AI 解夢大師秘笈</strong></h1><p style="white-space: normal; text-align: center;"><span style="font-size: 24px;"><strong><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">本文作者：Eric</span></strong></span><strong><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255);"></span></strong></p><p style="white-space: normal; text-align: center;"><strong><span style="color:#303233;font-family:Lato, PingFang TC, Helvetica Neue, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif"><span style="background-color: rgb(255, 255, 255); font-size: 18px;">作者 Github :&nbsp;https://github.com/Ratherman</span></span></strong></p><h2 style="white-space: normal; box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; background-color: rgb(255, 255, 255);">系列文章簡介<br></h2><p style="margin-top: 0px; margin-bottom: 26px; white-space: normal; box-sizing: border-box; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">自由團隊將從0到1 手把手教各位讀者學會(1)Python基礎語法、(2)Python Web 網頁開發框架 – Django&nbsp;、(3)Python網頁爬蟲 – 周易解夢網、(4)Tensorflow AI語言模型基礎與訓練 – LSTM、(5)實際部屬AI解夢模型到Web框架上。</p><h2 style="white-space: normal; box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; background-color: rgb(255, 255, 255);">學習資源</h2><p style="margin-top: 0px; margin-bottom: 26px; white-space: normal; box-sizing: border-box; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">AI . FREE Team 讀者專屬福利 →&nbsp;<a href="https://github.com/AI-FREE-Team/Python-Basics" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">Python Basics 免費學習資源</a></p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">學習目標</h2><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>使用 Django Admin</p></li></ul><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">教學開始</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">今天的內容主要是放在 Django 早在最一開始就幫我們建立好的 Django Admin。其介面簡潔，而且如果要對 models 做增刪改查，還有直接提供對應的GUI操作介面，可以讓我們使用。</p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">1. Run Server</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">首先，想先請大家看看在 DI_project 裡面的 urls.py，在這邊我們曾經有加入過對應到 demo_app 的 path object (見下方code)</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">urlpatterns&nbsp;=&nbsp;[
+&nbsp;&nbsp;&nbsp;&nbsp;path('admin/',&nbsp;admin.site.urls),
+&nbsp;&nbsp;&nbsp;&nbsp;path("demo_app/",&nbsp;include("demo_app.urls"))
+]</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">但不知道大家有沒有想過，上面還有一個&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">path('admin/', admin.site.urls)</code>&nbsp;這個是用來做什麼的呢?<br style="box-sizing: border-box;">其實它就是用來串起 Django Admin 的一個 path objecy。舉例而言，若是我們要使用到&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">demo_app/</code>&nbsp;裡面的任何一個服務(ex: school_list)，那我們就會開瀏覽器到&nbsp;<a href="http://127.0.0.1:8000/demo_app/school_list" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">http://127.0.0.1:8000/demo_app/school_list</a>&nbsp;；同理，如果是要用到 Django Admin 的話，那就會需要到&nbsp;<a href="http://127.0.0.1:8000/admin/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">http://127.0.0.1:8000/admin/</a>&nbsp;。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">我們實際 run server 來看看目前的顯示內容。<br style="box-sizing: border-box;"><code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">$ python manage.py runserver</code><br style="box-sizing: border-box;">並且到&nbsp;<a href="http://127.0.0.1:8000/admin/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">http://127.0.0.1:8000/admin/</a>&nbsp;這個網址看看吧。<br style="box-sizing: border-box;">大家應該都會看到以下的畫面:<br style="box-sizing: border-box;"><img src="https://ithelp.ithome.com.tw/upload/images/20200926/201307128Y1DhA3T3Q.png" alt="https://ithelp.ithome.com.tw/upload/images/20200926/201307128Y1DhA3T3Q.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"><br style="box-sizing: border-box;">在這個畫面當中我們看到了一個登入的介面。<br style="box-sizing: border-box;">在 Django 最初的設計當中，原本就是希望我們可以透過帳號密碼才能進入 Django Admin，原因上面稍稍提到過，是因為我們進入 Django Admin 之後將具有對 models 資料做到增刪改查的權力，所以當然不希望任何一個誰都能這樣做，只有具備帳號密碼的人才能進入。</p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">2. 建立使用者</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">我們先取消 run server，在Command Line上面，按下&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">Crtl+C</code>&nbsp;中止 server 運作。<br style="box-sizing: border-box;">先前我們利用過 manage.py 做過下面4件事情</p><ol style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>make migrations</p></li><li><p>migrate</p></li><li><p>startapp</p></li><li><p>runserver</p></li></ol><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">而我們在今天若想要建立一個可以登入剛剛看到的介面的話，一樣也會使用到 manage.py，我們在 Command Line上面輸入</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">python&nbsp;manage.py&nbsp;createsuperuser</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">接著會提示我們分別設定 Username, Email Address, Password，在這邊大家就輸入自己熟悉的那些帳號密碼吧。</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">Username:&nbsp;ai.free.team
+Email:&nbsp;AI.Free.Team@gmail.com
+Password:&nbsp;It's_Secret
+Password(again):&nbsp;It's_Secret</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">建立好之後，我們就可以再一次回到剛剛的登入頁面了。</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">python&nbsp;manage.py&nbsp;runserver</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">然後開啟瀏覽器，並至&nbsp;<a href="http://127.0.0.1:8000/admin/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">http://127.0.0.1:8000/admin/</a>&nbsp;，並且輸入剛剛自己設定的帳號密碼。<br style="box-sizing: border-box;">接著進入之後，大家就可以看到下面的這個畫面了。<br style="box-sizing: border-box;"><img src="https://ithelp.ithome.com.tw/upload/images/20200926/20130712BDWlEMxDFz.png" alt="https://ithelp.ithome.com.tw/upload/images/20200926/20130712BDWlEMxDFz.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"><br style="box-sizing: border-box;">到了這邊，我們發現，诶?剛剛不是說具有帳號密碼的使用者就可以有權限對 model 做增刪改查的操作了嗎?是沒錯的，但是其實要做到這件事情之前，還需要做一點設定喔。</p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">3. 設定 Admin</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">這裡的 admin 指的是 demo_app/admin.py 這個檔案，我們從開始到現在都沒有動過它，它是在我們最一開始的時候利用&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">python manage.py startapp demo_app</code>&nbsp;產生一個 APP 資料夾時自動產出的一個檔案。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">我們現在希望剛剛看到的 Django Admin 可以同步重現 model(學派和古人) 的資訊，所以在 demo_app/ admin.py 當中，我們就會需要註冊(register)我們的這兩個 model。所以打開 demo_app/ admin.py 並將以下內容加入</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">from&nbsp;django.contrib&nbsp;import&nbsp;admin
+from&nbsp;demo_app.models&nbsp;import&nbsp;Ancient_People,&nbsp;School
+
+#&nbsp;Register&nbsp;your&nbsp;models&nbsp;here.
+admin.site.register(Ancient_People)
+admin.site.register(School)</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">在這邊我們想要註冊的對象是 Ancient_People 和 School，所以會需要從 demo_app.models 做&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">import</code>&nbsp;的動作。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">回到&nbsp;<a href="http://127.0.0.1:8000/admin/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">http://127.0.0.1:8000/admin/</a>&nbsp;，這一次就會看到兩個 model 呈現出來了。<br style="box-sizing: border-box;"><img src="https://ithelp.ithome.com.tw/upload/images/20200926/20130712A5M5tIst9p.png" alt="https://ithelp.ithome.com.tw/upload/images/20200926/20130712A5M5tIst9p.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"></p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">4. 查(GET)</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">這邊的<span style="box-sizing: border-box; font-weight: 700;">查</span>相當於我們之前在開發API的時候使用到的GET。要做到將model內所有的資料都列出來，就只需要點選 Demo_app 的 Ancient_People 或是 School 就可以達到像是 school_list (詳情見demo_app/views.py)的效果。下圖為點選學派(School)之後的呈現結果:<img src="https://ithelp.ithome.com.tw/upload/images/20200926/20130712dWsOUgN80F.png" alt="https://ithelp.ithome.com.tw/upload/images/20200926/20130712dWsOUgN80F.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"></p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">5. 改(POST)</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">這邊的<span style="box-sizing: border-box; font-weight: 700;">改</span>，也就對應到我們利用 POST 做到 Update 的動作。假設我們想要讓孟子(Mencius)的歲數從65歲變成66歲，可以依序點擊 Demo_app的 Ancient_People &gt; Mencius，就可以看到以下畫面:<br style="box-sizing: border-box;"><img src="https://ithelp.ithome.com.tw/upload/images/20200926/20130712rzYwW89eZg.png" alt="https://ithelp.ithome.com.tw/upload/images/20200926/20130712rzYwW89eZg.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">然後再將歲數(age)的 65 改成 66，按下 Save 就 okay了。剩下的<span style="box-sizing: border-box; font-weight: 700;">增加</span>和<span style="box-sizing: border-box; font-weight: 700;">刪除</span>相信大家自己摸索一下就可以順利使用了。之後大家如果有建立 models 的需求，除了我們最一開始介紹的 django shell command 之外，也可以創建一個superuser，然後進到 Django Admin 用圖形化的方式建立資料。</p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">邁向 AI 解夢大師 - 第十ㄧ天</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">我們這8天從最一開始的<span style="box-sizing: border-box; font-weight: 700;">建立專案、APP</span>，然後<span style="box-sizing: border-box; font-weight: 700;">使用 django shell command</span>, 也有看到<span style="box-sizing: border-box; font-weight: 700;">urls和views 的交互</span>並接續加入了<span style="box-sizing: border-box; font-weight: 700;">models的呈現</span>，到<span style="box-sizing: border-box; font-weight: 700;">自己建立API</span>。最後，我們介紹了 Django Admin。相信大家對於 Django 已經相當熟悉了，不過這些都還算是 Django 的基礎，我們在未來幾天，會把一個語言模型作為 app 跑在 Django Project 裡面，屆時我們就會學習到 Django 的另一層應用了!</p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">參考連結</h2><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p><a href="https://docs.djangoproject.com/en/3.1/intro/tutorial02/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">Django Tutorial</a></p></li></ul><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">想更深入認識 AI . FREE Team ？</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">自由團隊 官方網站：<a href="https://aifreeblog.herokuapp.com/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://aifreeblog.herokuapp.com/</a><br style="box-sizing: border-box;">自由團隊 Github：<a href="https://github.com/AI-FREE-Team/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://github.com/AI-FREE-Team/</a><br style="box-sizing: border-box;">自由團隊 粉絲專頁：<a href="https://www.facebook.com/AI.Free.Team/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.facebook.com/AI.Free.Team/</a><br style="box-sizing: border-box;">自由團隊 IG：<a href="https://www.instagram.com/aifreeteam/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.instagram.com/aifreeteam/</a><br style="box-sizing: border-box;">自由團隊 Youtube：<a href="https://www.youtube.com/channel/UCjw6Kuw3kwM_il39NTBJVTg/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.youtube.com/channel/UCjw6Kuw3kwM_il39NTBJVTg/</a></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">文章同步發布於：<a href="https://ithelp.ithome.com.tw/articles/10244642" target="_blank" style="color: rgb(0, 112, 192); text-decoration: underline;"><span style="color: rgb(0, 112, 192);">第十二屆 IT 挑戰賽部落格</span></a></p><p><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255); box-sizing: border-box;">(</span><a href="https://aifreeblog.herokuapp.com/posts/115/AI_dream_12/" target="_blank" style="text-decoration: underline; box-sizing: border-box; font-size: 18px; color: rgb(0, 112, 192);"><span style="box-sizing: border-box; font-size: 18px; color: rgb(0, 112, 192);">繼續閱讀下一篇教學...</span></a><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255); box-sizing: border-box;">)</span></p>
+
+            <p class="post-meta"><font face="微軟正黑體">由
+              <a href="#">Ken</a>
+              發布於 2020年11月13日 07:15</font></p>
+          </div>
+          <hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="/postlist">回文章列表 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    
+    
+    
+
+
+        <!-- Footer -->
+    <div align="center">
+      <div id="BA_AD_1"></div><script type="text/javascript" src="//js1.bloggerads.net/ShowBanner.aspx?blogid=20180821000002" async=""></script>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/blog">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/AI.Free.Team/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:AI.Free.Team@gmail.com">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright © AI . Free Team 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/bootstrap_blog/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/bootstrap_blog/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="/static/bootstrap_blog/js/clean-blog.min.js"></script>
+
+  
+
+
+</body></html>

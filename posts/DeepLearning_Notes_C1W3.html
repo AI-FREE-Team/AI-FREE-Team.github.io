@@ -1,0 +1,186 @@
+<html lang="en"><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" type="text/css" href="//d1ypub5wfz82gq.cloudfront.net/AdsService/CSS/ba_ad.min.css?v=180717001"><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="//agent.aralego.com/sdk" async=""></script><script type="text/javascript" src="//js1.bloggerads.net/getads.aspx?blogid=20180821000002&amp;fid=1&amp;c=b1582163820&amp;d=1&amp;sh5=1&amp;sflash=0&amp;isc=0&amp;w=477&amp;isw=0&amp;hw=478&amp;cw=0" async=""></script><script type="text/javascript" src="//d1ypub5wfz82gq.cloudfront.net/AdsService/JS/ba.min.js?v=180717001" async=""></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-124339513-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-124339513-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>【深度學習】學習筆記（三）</title>
+    
+    
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap_blog/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="Shortcut Icon" type="image/x-icon" href="/static/images/AI_free_logo.png">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font1.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font2.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/bootstrap_blog/css/clean-blog.min.css" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="https://cdn.aralego.net/css/dev/ucfad-formats.css"></head>
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/blog">AI . FREE TEAM</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/postlist">文章列表</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacts">聯絡我們</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">會員中心</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/accounts/logout">登出</a>
+            </li><input type="hidden" name="csrfmiddlewaretoken" value="bbj5gDeWOs67B0aGyXaIjm3lOlSzeql3UXk8K3phM9ebXRHvdUaRXWVqnC83a9EW">  
+                        
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+
+
+
+    <!-- <div>
+      <strong>Menu:</strong>
+      <ul>
+    
+    <li><a href="/accounts/email/">Change E-mail</a></li>
+    <li><a href="/accounts/logout/">Sign Out</a></li>
+     
+      </ul>
+    </div>-->
+
+    
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('/static/images/signup.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1 align="center">【深度學習】學習筆記（三）</h1>
+              <h2 class="subheading" align="center"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">         
+              
+                <h1 class="article-hed" style="white-space: normal; box-sizing: inherit; margin: 0px 0px 0.75rem; padding: 0px; color: rgb(34, 34, 34); font-family: National; line-height: 0.9; text-rendering: auto; font-size: 4rem; letter-spacing: -0.0625rem; background-color: rgb(255, 255, 255); text-align: center;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px;">深度學習 - 學習筆記（三）</span></h1><p style="white-space: normal;"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">本學習筆記課程為 Coursera DeepLearning.ai 推出之深度學習專項課程，學習筆記摘要自&nbsp;<span style="color: rgb(0, 176, 240);"><strong>AI</strong></span><strong>&nbsp;<span style="color: rgb(127, 127, 127);">.&nbsp;<span style="color: rgb(146, 208, 80);">FREE</span>&nbsp;Team</span></strong>&nbsp;讀書會，透過學習筆記讓讀者認識深度學習。(進度：Course 1/Week 3)</span></p><p style="white-space: normal; text-align: center;"><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/dl-c1w1/cover.png" style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px; width: 100%;"></p><p style="white-space: normal;"><strong style="font-size: 20px;"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; text-align: justify; background-color: rgb(255, 255, 255);">一、線上課程資訊</span></strong></p><ol class=" list-paddingleft-2" style="width: 934.797px; white-space: normal;"><li><p><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體;"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">課程名稱：深度學習專項課程 (<a href="https://www.coursera.org/specializations/deep-learning" target="_blank" textvalue="Deep Learning Specialization">Deep Learning Specialization</a>)</span></span></p></li><li><p><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體;"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">課程教授：吳恩達 教授 (Andrew Ng)</span></span></p></li><li><p><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體;"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">課程主題：類神經網絡與深度學習 (<a href="https://www.coursera.org/learn/neural-networks-deep-learning/" target="_self">Neural Network and Deep Learning</a>)</span></span></p></li></ol><p style="white-space: normal;"><span style="background-color: rgb(255, 255, 255); font-size: 18px; color: rgb(33, 37, 41); font-family: 微軟正黑體; text-align: justify;"><strong style="font-size: 20px;">二、課程內容</strong></span></p><p style="white-space: normal; text-align: center;"><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/dl-c1w3/1.png" style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px; width: 100%;"></p><p style="white-space: normal; text-align: justify;"><strong><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體;"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">類神經網絡(Neural Network)</span></span></strong><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體;"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"> 是由<strong>多<span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">個神經元 (Neurons) 所組成</span></strong><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">，從上方示意圖及計算公式可以發現：每個神經元就好像是一個 Logistic Regression，先進行向前傳播(Forward Propagation)→啟動函數(Activation Function)→向後傳播(Backward Propagation)。</span></span></span></p><p style="white-space: normal; text-align: justify;"><br></p><p style="white-space: normal; text-align: justify;"><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/dl-c1w3/2.png" style="text-align: center; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px; width: 100%;"></p><p style="text-align: justify; white-space: normal;"><span style="color:#212529;font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">以上圖為例，Input Data 也就是 <em>X</em>&nbsp;，我們稱作「輸入層 - a<sup>[0]</sup>」；Output Data 即 Y，稱作<span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">「輸出層</span><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">」，而中間運算的神經元，我們稱作「隱藏層」。</span></span></span></p><p style="text-align: justify; white-space: normal;"><span style="color:#212529;font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"><br></span></span></span></p><p style="text-align: justify; white-space: normal;"><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/dl-c1w3/3.png" style="text-align: center; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px; width: 100%;"></p><p style="text-align: justify; white-space: normal;"><span style="color:#212529;font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><strong>類神經網絡運算</strong></span></span></p><p style="text-align: justify; white-space: normal;"><span style="color:#212529;font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">在進行類神經網絡運算時，每個神經元都會進行其運算(向前傳播 + 啟動函數)，而當我們在開發類神經網絡的過程，為了優化運算效率，我們會將每個神經元的權重進行堆疊(如右下角 w<sup>[1].T</sup>)，而每個神經元的偏差也會進行堆疊以矩陣的方式呈現，因此進行類神經網絡運算時，會大量運用繁複的矩陣運算，而上圖橘框則為矩陣運算的簡易呈現。(<em style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; white-space: normal;">w<sup>[</sup><sup>1]</sup></em><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">&nbsp;: 第一層權重、<span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">b</span><sup style="color: rgb(33, 37, 41); font-family: 微軟正黑體; text-align: justify; white-space: normal;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">[1]</span></sup><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">：第一層偏誤)</span></span></span></span></p><p style="text-align: justify; white-space: normal;"><span style="color:#212529;font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"></span></span></span></span></p><p style="white-space: normal; text-align: justify;"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體;"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">在進行神經網絡運算時，矩陣的大小 (shape) 常常使開發者混淆；</span></span><span style="background-color: rgb(255, 255, 255); color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px;">以上圖為例：</span></p><ul class="custom_dash list-paddingleft-1" style="width: 934.797px; white-space: normal;"><li class="list-dash list-dash-paddingleft"><p style="text-align: justify;"><span style="background-color: rgb(255, 255, 255); color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px;">輸入層 3 個特徵值(x1, x2, x3)、僅一筆資料(m=1)，因此 shape = (3, 1)</span></p></li><li class="list-dash list-dash-paddingleft"><p style="text-align: justify;"><span style="background-color: rgb(255, 255, 255); color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px;">第一層隱藏層，輸入 3 個特徵值、有 4 個神經元，故權重(&nbsp;<em>w<sup>[</sup><sup>1]</sup></em>&nbsp;) 的shape = (3, 4)</span></p></li><li class="list-dash list-dash-paddingleft"><p style="text-align: justify;"><span style="background-color: rgb(255, 255, 255); color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px;">第二層隱藏層，輸入 4 個特徵值、有 1 個神經元，故權重(&nbsp;<em>w<sup>[2</sup><sup>]</sup></em>&nbsp;) 的shape = (4, 1)</span></p></li><li class="list-dash list-dash-paddingleft"><p style="text-align: justify;"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體;"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">每個神經元都各自有偏差(bias)，因此 b<sup>[1]&nbsp;</sup></span></span><span style="background-color: rgb(255, 255, 255); color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px;">shape = (4, 1)、b<sup>[2]&nbsp;</sup>shape = (1, 1)</span></p><p style="text-align: justify;"><span style="background-color: rgb(255, 255, 255); color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px;"></span></p></li></ul><p style="text-align: justify; white-space: normal;"><br></p><p style="white-space: normal; text-align: center;"><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/dl-c1w3/4.png" style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px; width: 100%;"></p><p style="white-space: normal;"><strong><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">可以用迴圈進行計算，為何需要矩陣運算？</span></strong></p><p style="white-space: normal;"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">在程式開發過程中，進行矩陣運算相較利用迴圈進行運算來的快速，因此在進行開發「深度學習」時，矩陣運算能夠大幅提升運算效率。</span></p><p style="white-space: normal;"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">因此，呈上圖，我們透過將<strong>每個神經元權重、偏誤的堆疊</strong>形成矩陣，並透過「向量化」將大量的訓練範例 (m) 轉換成一個大矩陣，再行矩陣運算，便能優化電腦運算的效率。</span></p><p style="white-space: normal;"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"><br></span></p><p style="white-space: normal;"><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/dl-c1w3/5.png" style="text-align: center; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px; width: 100%;"></p><p style="text-align: justify; white-space: normal;"><span style="color:#212529;font-family:微軟正黑體"><span style="font-size: 18px; background-color: rgb(255, 255, 255);">以上四個常見的啟動函數，其中 ReLu 較常使用在神經元間數據的運算，sigmoid 函數則較常出現在輸出前一層的啟動函數。</span></span></p><p style="text-align:center"><br></p><p style="white-space: normal; text-align: center;"><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/dl-c1w3/6.png" style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px; width: 100%;"></p><p style="white-space: normal; text-align: justify;"><span style="background-color: rgb(255, 255, 255); color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px;">(本文不進行推導啟動函數的向後傳播運算，淺綠色框即為各函數微分後的公式)</span><br></p><p style="white-space: normal; text-align: justify;"><span style="background-color: rgb(255, 255, 255); color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px;">若對於數學推導有興趣的讀者，歡迎參考下列影片：</span></p><p style="text-align:center"><embed type="application/x-shockwave-flash" class="edui-faked-video" pluginspage="http://www.macromedia.com/go/getflashplayer" src="https://www.youtube.com/v/P7_jFxTtJEo" width="420" height="280" wmode="transparent" play="true" loop="false" menu="false" allowscriptaccess="never" allowfullscreen="true"></p><p style="white-space: normal; text-align: center;"><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/dl-c1w3/7.png" style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px; width: 100%;"></p><p style="white-space: normal; text-align: justify;"><strong><span style="background-color: rgb(255, 255, 255); color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px;">為什麼需要非線性啟動函數？</span></strong><br></p><p style="white-space: normal; text-align: justify;"><span style="background-color: rgb(255, 255, 255); color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px;">因為線性函數之間的組合(乘積)，仍為線性函數(簡易推導如上)，會造成：</span></p><ul class=" list-paddingleft-2" style="list-style-type: disc;"><li><p style="white-space: normal; text-align: justify;"><span style="background-color: rgb(255, 255, 255); color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px;">隱藏層失去意義 (即使疊了100層，效果如同1層)</span></p></li></ul><p style="white-space: normal; text-align: justify;"><span style="background-color: rgb(255, 255, 255); color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px;"></span><br></p><p style="white-space: normal; text-align: center;"><img src="https://raw.githubusercontent.com/chenkenanalytic/img/master/dl-c1w3/8.png" style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 36px; width: 100%;"></p><p style="white-space: normal; text-align: justify;"><span style="background-color: rgb(255, 255, 255); color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px;"><br></span></p><p style="white-space: normal;"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"><br></span></p><p style="white-space: normal;"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">以上統整自人工智慧自由團隊 - 深度學習專項課程讀書會，歡迎未來有興趣一起參與學習的朋友們，一起追蹤我們粉絲專頁、加入學習社團，並持續關注&nbsp;<span style="color: rgb(0, 176, 240);"><strong>AI</strong></span><strong>&nbsp;<span style="color: rgb(127, 127, 127);">.&nbsp;<span style="color: rgb(146, 208, 80);">FREE</span>&nbsp;Team</span></strong>&nbsp;部落格，如有進一步問題或是交流需求，歡迎透過粉專 or email 聯絡我們喔！<span style="box-sizing: border-box; font-family: &quot;Microsoft JhengHei&quot;, &quot;Microsoft YaHei&quot;;">(</span><span style="box-sizing: border-box; font-weight: bolder; font-family: &quot;Microsoft JhengHei&quot;, &quot;Microsoft YaHei&quot;;"><span style="box-sizing: border-box; color: rgb(127, 127, 127);"><em style="box-sizing: border-box;">AI.Free.Team@gmail.com</em></span></span><span style="box-sizing: border-box; font-family: &quot;Microsoft JhengHei&quot;, &quot;Microsoft YaHei&quot;;">)</span></span></p><p style="white-space: normal;"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-family: &quot;Microsoft JhengHei&quot;, &quot;Microsoft YaHei&quot;;">相關資訊：</span></span></p><p style="white-space: normal;"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">認識自由團隊：</span><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgoo.gl%2FD2in5A%3Ffbclid%3DIwAR0wCBENlR8JdHJNqP-aPIyq4-7pyUVdnxobCH3XiapuQhQmMJSfM7XdX9Y&amp;h=AT1x7_aonCYGclyAOKkLLxqXpDGFKYxiTVqIwwcLhuz1n8mRD4ejrsbTxQ13miIdI2ojUIq_FzOu5dEkRLL-cwOBO1w_zKubEb4q2e7fiVEP2JY-yc6RI59xawVFrfTb9TWQWE5lnYApwbbMs2EnYWz08MBv2PRYTJXK0zj5WLugxg2eQjmow5UitWe45pQ5mMwkrf7O8NzpDmmzMHDXnGLTDu1_5wPJmjpf5mMoi3Jd16BSdNA-B_3BQlMzoDOOPyB1RWuQkRiC--kVa86AQW6L-_3cf5p916W3u00fVpzZslGekw0QUDyE3CvsK-Q8g7Ie-Hr9vvb1FvnTQZgROlEsJw6La-d5KcNgmxt_B6rifDFrbadqqRL08RNVqSO1fmMmh_iGloSxuu-pzEp0NAER94k9cVI07ke8dDFAaYc5C_MjM-PUHkogb_GtmvbFPMBLlcNjmLrLR6arG6AB7PdJM1wfvdqQrc1-q7Oy1Wo7RMvs7wltE4Pqfnqv1eCgensa58PE7U5-p2KS62OfG5N2PSDrIDwRLTDI0ljWDUjuFnWjj2JCeT_z72HLW44YekdkWaSntAP9Dvo7B9HnBYQTD2-JtGGNQaLY_3Xh6SNCqhYDQV8Q2iU47LTeOe0rXkYRhs-_" target="_blank" data-ft="{&quot;tn&quot;:&quot;-U&quot;}" rel="noopener nofollow" data-lynx-mode="async" style="cursor: pointer; color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">https://goo.gl/D2in5A</a><br style="color: rgb(29, 33, 41); font-family: Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">加入學習社群：</span><a href="https://goo.gl/k98CBy?fbclid=IwAR2dK04dm_5OJu0oM8MZbklopzoQwVzB4O8i_Wu7AHsLNUxm2QidQHTFBh0" target="_blank" data-ft="{&quot;tn&quot;:&quot;-U&quot;}" rel="noopener nofollow" data-lynx-mode="async" data-lynx-uri="https://l.facebook.com/l.php?u=https%3A%2F%2Fgoo.gl%2Fk98CBy%3Ffbclid%3DIwAR2dK04dm_5OJu0oM8MZbklopzoQwVzB4O8i_Wu7AHsLNUxm2QidQHTFBh0&amp;h=AT2hUJ99EHHiSGJCuct3_mh3DI3zCsBOltPXmSIgbdCut_20G7b688plDB7mDoBWJPr8vbtmjCdPaTtyESKKVKp-Y8WINd-rUITRKedDrW77nBIqEZIfKgXojK7ZJEEVghfxaTT3gI2j4S9kRKSHK2Nevw_IlWsTf_OptqsC2XOCQWEuFIbIhkFeJVq9wfGt8TxnTW9DuLiKse1_zJM3-GS7avJqch2UCYQDUHqlcjOGhgN1YYiioy2vA9x1ixrdpKFHFpA9TIyIP523K-PjrsdMibHSoCtASTfD0HLjioShNJanf88YbS5ymed0ODzmCf_meT7IxgOXgLmjosmzTA7koBtfopsaYfmCHqxGWelf1BOy8-bIvAS58pjzVI10pFOHslZ_pDfC0Xhqe9hNUtINkaeBvcugQHeUZ-KgOXwHqgzmqSiSR6k2olwfZeYDPUq4ZpoAqcVdNIVxaXwU4gCMhNFTVg2b-DoQJbEX_DYbqcVr8c1W4M15rDJVClQijczh-2v9yiewQy_Tj6LpK74f3-4Z_sBNfEFkPlhYEsNlg-eWRIqTZhfo6NImQO1GS3WUXJHPHrbAfiKXVBWe9XTrlzyE0Gpifka5vg6Xl0NyMLAzDf37Iw1H7ag9O0DXgZ0FgsRH" style="cursor: pointer; color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">https://goo.gl/k98CBy</a><br style="color: rgb(29, 33, 41); font-family: Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">企業合作專區：</span><a href="https://goo.gl/osGHhK?fbclid=IwAR0JTMcY-UkQSubgIxRD-KP0QQgnAczhSLPvXhyxHiR-lyNxLvorlc88sic" target="_blank" data-ft="{&quot;tn&quot;:&quot;-U&quot;}" rel="noopener nofollow" data-lynx-mode="async" data-lynx-uri="https://l.facebook.com/l.php?u=https%3A%2F%2Fgoo.gl%2FosGHhK%3Ffbclid%3DIwAR0JTMcY-UkQSubgIxRD-KP0QQgnAczhSLPvXhyxHiR-lyNxLvorlc88sic&amp;h=AT2g7NQlA23J4SytJtKZZtHFg6_VklszovxQr-kPgv7hdRw2GHgOQUNpcqO7x8ViY2I9QVbuAh8v9W-EiIYeibHEScnKPLrYrJXI3_w5aWJRBrd7edgYxZXFP-pUuywHwKgYUYkcT-gkoUc2Km7qyUIBaHGeTiNpyjIQqKAf4T1eKS5hLW7aoKUG6b5xrb2emJiosj0QIqfkZE1hSrBlSjDFyBHt_v7pBmjIJqj_VWXnIQfZojENotlE5AS3AZCAX6od5sNa8uBQlqopVpZVDFuOtEOl1UlLuVtDBlcvX6zJjSqlXjYIw_ZcDAAodzx5FgqzCsH0R6kIXRPwHygy7SLnlzUO138QStSVzXlUGJLWI4gJY13e5EFrz_J3BJf4-903T_G8coS0R5dgYChshiUeJfRqaC3_O9thhCl1IHx1Yz2gcbSRfm5LJnK1D_3baVPbO3RCu3jaweDl_6RLn33Rg-d5cowks7yQy6Ak5JfB44wZIZclyHIwVWrBPfZ9GdMs5TlyecMV0BoLlGdtJJwABV8MbobYR8-ABbWh7RBe--ogMrun5KxVr6wZNT19FkgcCYgDo2L66ljaa_DPX_tdhiKRYTJrQ7ZuZcFiJbODT0RiWJSOb2xgBdz3VHLevDgeQ4qCclT15Vs" style="cursor: pointer; color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">https://goo.gl/osGHhK</a><br style="color: rgb(29, 33, 41); font-family: Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">自由學習平台：</span><a href="https://goo.gl/ALVKKF?fbclid=IwAR0YuniUXz0DVN__B3ErDuwzrs9PGwzQWnYGivX-l0ZTDjE7s2xNNUBlAI8" target="_blank" data-ft="{&quot;tn&quot;:&quot;-U&quot;}" rel="noopener nofollow" data-lynx-mode="async" data-lynx-uri="https://l.facebook.com/l.php?u=https%3A%2F%2Fgoo.gl%2FALVKKF%3Ffbclid%3DIwAR0YuniUXz0DVN__B3ErDuwzrs9PGwzQWnYGivX-l0ZTDjE7s2xNNUBlAI8&amp;h=AT2royAcMVBFRcwtjtqIuXPZHQGhTi4UMnJdxl3nHtU3oiO5rHt4iqAv_bBKswKb--NqmrZQ7upzMnDqkj8tdMqYh4zomejx-Qbz4ZL2hANZgoK5GT1jvvJIfUnqWm2CT5PwYQydEBxDMlgq6yZxazGL8nLmSbmjyPPRyVMasgNjXef3Tqt7DTxRc3alECMqA7s2YWoyZj1xXCYAaxxa_HY2U6e0s1Akjh3-4DSnDnkpL49PjmmvFYHA9wbligV82Rl0Vck4_wjoc-_TnSOv6feETd2wKFqG1LLpfnyT0J-aemjsBmJgD9aqP4qxoMSefjoPX9vGRzmPttNcwiE8_Ram0HnVwFdOUAGhtawxTeJRKMqgmK5OJ802sWV2fmljJfa5lummGny6Dh-q-uPyL5WPU5gFGkNhFxw2-V-UzQEfqmzNflbY5HUxLT3agQQffDZ6mzMWdPSZ12LpaaU_G6sLSs4MOk1s8SmPu86hhDmwbmw4GumJziGTQoKZcFz_WtN7xNYd4HkGykmOu7fp482CqpbOBZC1jQI_Z6zLSUPprvvvdSU1ywVgy5NXTR59bU3sYLEV87QQvPrBysqNCUcmQG8tQyCrFYY7McUeWHPxFgiUkueRzZy5tmETPWbNBZ7fv0TM" style="cursor: pointer; color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">https://goo.gl/ALVKKF</a><br style="color: rgb(29, 33, 41); font-family: Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><span style="color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">【AI.Free Team 介紹影片】<br style="color: rgb(29, 33, 41); font-family: Helvetica, Arial, sans-serif; font-size: 14px;"></span><a href="https://www.youtube.com/watch?v=nEOi9qk35KA&amp;fbclid=IwAR1vndh-ZXRbsQBcGPlwPa3qRFJYdyIadK39r4SS7lXBeC6pw9uB9JMlbHg" target="_blank" data-ft="{&quot;tn&quot;:&quot;-U&quot;}" rel="noopener nofollow" data-lynx-mode="async" data-lynx-uri="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnEOi9qk35KA%26fbclid%3DIwAR1vndh-ZXRbsQBcGPlwPa3qRFJYdyIadK39r4SS7lXBeC6pw9uB9JMlbHg&amp;h=AT1uFwgCAFlwmhRljKJ-7csYW2ymkxY03-BbbfVhB82OkFaX_G4FEocN05NIvQ0G_cF815C-XTQtupza2hcfq67TH3MW0UmpR8y1kdQQvR7jZn0-ibnKTEpS6uQ-jknYR1m_6RQGexa7IxZCUh8utCdEQb9nm-UQGjowPXq7eMbz5OouXMgeWsrlR7Thx3ellJYv3j2Qe5v8cy6oXgKWMOuSGTJ2lqrR7ZnD3fWri8u4ub3y5EVUX2Avm6zpV8P46fQ6E60I--XG18PCfZhlQnJzEMptevgLvNYJM9g37Tz2JAw_DZL-6FoiYYibsuIkqm7dfrXVVhWWP-R1WG7ax-9tZ1-vIs8tjAMy59l_UA_ut4VXHUM_noWKQclNlR4RXVunaLnySVa1nvP2T2oh8U7dx0cHXPilbjdkws4kdBEr_qoZlzLi0jRX5nc5mJdECncqGebLXHF7h4aM7CfKSMK-oe3-3OgsfDbHMQfqR92kxW8d8wIiVeIT5H3GTSxXMcgGAGLfq7laPsJ6WHUcqZPUSqOuBb4_iPe8LJBagpCUkYrdFt_ID0lfVSy5uJsyb3Ik7W5peHLtftAxuzFpjJ4ssBjoTmAiWi3Fv5ewsu7bxyIuQSF6JVsfEoIgTvEND1X5dfih" style="cursor: pointer; color: rgb(33, 37, 41); font-family: 微軟正黑體; font-size: 18px; text-align: justify; background-color: rgb(255, 255, 255);">https://www.youtube.com/watch?v=nEOi9qk35KA</a></p><p><br></p>
+
+            <p class="post-meta"><font face="微軟正黑體">由
+              <a href="#">Ken</a>
+              發布於 2019年12月23日 10:09</font></p>
+          </div>
+          <hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="/postlist">回文章列表 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    
+    
+    
+
+
+        <!-- Footer -->
+    <div align="center">
+      <div id="BA_AD_1"></div><script type="text/javascript" src="//js1.bloggerads.net/ShowBanner.aspx?blogid=20180821000002" async=""></script>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/blog">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/AI.Free.Team/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:AI.Free.Team@gmail.com">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright © AI . Free Team 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/bootstrap_blog/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/bootstrap_blog/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="/static/bootstrap_blog/js/clean-blog.min.js"></script>
+
+  
+
+
+</body></html>

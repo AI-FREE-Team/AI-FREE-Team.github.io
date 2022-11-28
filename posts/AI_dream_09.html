@@ -1,0 +1,239 @@
+<html lang="en"><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" type="text/css" href="//d1ypub5wfz82gq.cloudfront.net/AdsService/CSS/ba_ad.min.css?v=180717001"><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="//agent.aralego.com/sdk" async=""></script><script type="text/javascript" src="//js1.bloggerads.net/getads.aspx?blogid=20180821000002&amp;fid=1&amp;c=b1344382313&amp;d=1&amp;sh5=1&amp;sflash=0&amp;isc=0&amp;w=477&amp;isw=0&amp;hw=478&amp;cw=0" async=""></script><script type="text/javascript" src="//d1ypub5wfz82gq.cloudfront.net/AdsService/JS/ba.min.js?v=180717001" async=""></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-124339513-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-124339513-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Day09 - Django VI.</title>
+    
+    
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap_blog/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="Shortcut Icon" type="image/x-icon" href="/static/images/AI_free_logo.png">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font1.css" rel="stylesheet" type="text/css">
+    <link href="/static/bootstrap_blog/vendor/font-awesome/css/font2.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/bootstrap_blog/css/clean-blog.min.css" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="https://cdn.aralego.net/css/dev/ucfad-formats.css"></head>
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/blog">AI . FREE TEAM</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/postlist">文章列表</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacts">聯絡我們</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">會員中心</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/accounts/logout">登出</a>
+            </li><input type="hidden" name="csrfmiddlewaretoken" value="f0h2HPmyXjqEI0w8BGHmm9Zt3GvHyyFpYMi5bfxTV0yI4R3XgDHv0JRyCXLbuhYi">  
+                        
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+
+
+
+    <!-- <div>
+      <strong>Menu:</strong>
+      <ul>
+    
+    <li><a href="/accounts/email/">Change E-mail</a></li>
+    <li><a href="/accounts/logout/">Sign Out</a></li>
+     
+      </ul>
+    </div>-->
+
+    
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('/static/images/signup.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1 align="center">Day09 - Django VI.</h1>
+              <h2 class="subheading" align="center"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">         
+              
+                <h1 style="white-space: normal; box-sizing: border-box; margin: 30px 0px 14px; font-size: 30px; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); background-color: rgb(255, 255, 255); text-align: center;"><strong>斜槓學習 – 零基礎成為 AI 解夢大師秘笈</strong></h1><p style="white-space: normal; text-align: center;"><span style="font-size: 24px;"><strong><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">本文作者：Eric</span></strong></span><strong><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255);"></span></strong></p><p style="white-space: normal; text-align: center;"><span style="font-size: 24px;"><strong><span style="color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-weight: bolder; color: rgb(33, 37, 41); font-family: Lora, &quot;Times New Roman&quot;, &quot;Microsoft JhengHei&quot;, serif; font-size: 24px; text-align: center; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif;"><span style="box-sizing: border-box; font-weight: bolder; color: rgb(33, 37, 41); font-family: Lora, &quot;Times New Roman&quot;, &quot;Microsoft JhengHei&quot;, serif;"><span style="box-sizing: border-box; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif;"><span style="box-sizing: border-box; font-size: 18px;">作者 Github :&nbsp;https://github.com/Ratherman</span></span></span></span></span></span></strong></span></p><h2 style="white-space: normal; box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; background-color: rgb(255, 255, 255);">系列文章簡介<br></h2><p style="margin-top: 0px; margin-bottom: 26px; white-space: normal; box-sizing: border-box; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">自由團隊將從0到1 手把手教各位讀者學會(1)Python基礎語法、(2)Python Web 網頁開發框架 – Django&nbsp;、(3)Python網頁爬蟲 – 周易解夢網、(4)Tensorflow AI語言模型基礎與訓練 – LSTM、(5)實際部屬AI解夢模型到Web框架上。</p><h2 style="white-space: normal; box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; background-color: rgb(255, 255, 255);">學習資源</h2><p style="margin-top: 0px; margin-bottom: 26px; white-space: normal; box-sizing: border-box; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; background-color: rgb(255, 255, 255);">AI . FREE Team 讀者專屬福利 →&nbsp;<a href="https://github.com/AI-FREE-Team/Python-Basics" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">Python Basics 免費學習資源</a></p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">學習目標</h2><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>用 rest framework 建立 API</p></li></ul><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">教學開始</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">在今天會進入更後端一點的世界，我們會實作出幾支 API去處理來自用戶端的特定 Request。在這邊會提到的 Requests 總共有3個， GET, POST, 和 DELETE。<br style="box-sizing: border-box;">Request，表示用戶透過特定的方式"請求"伺服器端做一些操作，在這兩天的會用到的例子，都會與資料庫的操作有關係。另外，如果有牽涉到回傳或是上傳的部分，我們通常都會將資料格式轉換成 JSON 的形式(與 Python 的 List 很像，基本的格式為 {"key": “value”})。像是下方的圖片，為等一下會做出來專門處理GET Request 的API所回傳的資料，為標準的 JSON 格式。<br style="box-sizing: border-box;"><img src="https://ithelp.ithome.com.tw/upload/images/20200924/20130712DAI4daLWbm.png" alt="https://ithelp.ithome.com.tw/upload/images/20200924/20130712DAI4daLWbm.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"></p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">1. 簡介 HttpRequest Methods</h2><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">GET</h3><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>單純用來取得資料。</p></li><li><p>例子: 取得所有學派的資料。</p></li></ul><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">POST</h3><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>發出 Request 時，會伴隨其他參數。</p></li><li><p>例子: 新增所有學派的資料，除了發 request 以外還需要伴隨新的學派的資訊。</p></li></ul><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">DELETE</h3><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>發出 Request 刪除資料庫的特定內容，會伴隨其他參數。</p></li><li><p>例子: 刪出某個古人的資料，也需要伴隨能夠古人的資訊(如 id, name)。</p></li></ul><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">我們今天會使用到&nbsp;<span style="box-sizing: border-box; font-weight: 700;">Django RestFramework</span>&nbsp;這個套件，來簡潔的實現API的建立。</p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">2. API 是什麼</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">在我們進入到下一步驟之前，先來探討 API 這個概念，英文全名是 Application Programming Interface，而中文翻譯是應用程式介面，使用者端不需要知道應用程式是如何運作的，使用者只需要知道該怎麼使用 API 就好了。生活中其實隨處可見 API 的例子，以買飲料為例，我們去飲料機投硬幣得到飲料。在這個動作裡面，飲料機就是這個動作的介面 (Interface)，它負責接收硬幣，然後回傳飲料給使用者。<span style="box-sizing: border-box; font-weight: 700;">類比到我們的使用情境，我們想要API 做到的事情是，接收到 Requests (GET, POST, DELETE)之後，會回傳給使用者一個他們需要的內容。</span></p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">3. 準備階段</h2><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">安裝 package</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">有了 Request 和 API 的基本概念後，我們就來安裝上面提到的 rest framework 套件吧。先進入虛擬環境，然後再安裝。</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">$&nbsp;pipenv&nbsp;shell
+$&nbsp;pipenv&nbsp;install&nbsp;djangorestframework</pre><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">設定 setting.py</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">成功安裝之後，打開 DI_project 中的設定檔，也就是 DI_project/ settings.py，在前幾天也有提過的 INSTALLED_APPS 這個 list 結構再多<span style="box-sizing: border-box; font-weight: 700;">加入 "rest_framework" 這個APP</span>，所以最後會變成下面這樣。</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">INSTALLED_APPS&nbsp;=&nbsp;[
+&nbsp;&nbsp;&nbsp;&nbsp;'django.contrib.admin',&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;'django.contrib.auth',&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;'django.contrib.contenttypes',&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;'django.contrib.sessions',&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;'django.contrib.messages',&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;'django.contrib.staticfiles',&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;'demo_app.apps.DemoAppConfig',&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;'rest_framework',
+]</pre><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">目標: 設計 API，使之處理學派資料的增刪改查 Requests</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">新增檔案 (demo_app/ serializers.py)<br style="box-sizing: border-box;">首先需要在 demo_app 內多增加一個檔案，並將它命名為 serializers.py，因為<span style="box-sizing: border-box; font-weight: 700;">它的工作就是將一連串的 model objects (ex: 學派)，序列化地轉換成 JSON 格式的資料</span>。而檔案命名使用<span style="box-sizing: border-box; font-weight: 700;">複數</span>(s)呈現的理由和 urls.py、views.py 是類似的，就是因為我們會有 class 是針對 Ancient_People 做 serialize、也會有 class 是針對 School 做 serialize，所以才取名為<span style="box-sizing: border-box; font-weight: 700;">複數型</span>。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">完成上面的設定之後，我們就可以進入撰寫 API 的部分了。</p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">4. 程式撰寫</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">首先，為了讓 Requesets 可以順利地進行，我們先將做出 serialize 的工具做好，所以先將以下內容放進 serializers.py 內。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">DI_project/ demo_app/ serializers.py</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">from&nbsp;rest_framework&nbsp;import&nbsp;serializers
+from&nbsp;demo_app.models&nbsp;import&nbsp;School&nbsp;
+
+class&nbsp;School_Serializer(serializers.ModelSerializer):
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;Meta:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model&nbsp;=&nbsp;School
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;=&nbsp;"__all__"</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">我們在這裡需要先&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">import rest_framework</code>&nbsp;的 serializers，然後再 import 同為 demo_app 資料夾底下的 models.py 裡面的兩個class (i.e. Ancient_People 和 School)。接著，我們看到了兩層 class 的結構，<span style="box-sizing: border-box; font-weight: 700;">在裡面那層 Meta 的 class 必須要設定2個變數。</span></p><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>model:</p></li><ul style="list-style-type: square;" class=" list-paddingleft-2"><li><p>我們將 School (學派) assign 給此變數，就是因為我們希望這個 School_Serializer 能夠針對 School 這個 model 做序列化。</p></li></ul><li><p>fields:</p></li><ul style="list-style-type: square;" class=" list-paddingleft-2"><li><p>我們將此變數設定為 "<span style="box-sizing: border-box; font-weight: 700;">all</span>"，表示我們希望對 School 內所有的欄位都做序列化。待會我們看到成果的時候就會實際的看到完整資料的回傳。</p></li></ul></ul><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">在有上面 serializers.py 的幫助下，等等的操作就會變得相當容易。在今天我們會先完成 查(GET)這部分的API，而在明天則會依照新增(POST)、修改(還是POST)、刪除(DELETE)的順序完成。</p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">5. 查(GET)</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">這裡我們寫3種<span style="box-sizing: border-box; font-weight: 700;">查</span></p><ol style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>列出所有預計完成的API</p></li><li><p>列出所有的學派資料</p></li><li><p>列出特定學派的資料</p></li></ol><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">Views</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">開啟 demo_app/ views.py，將以下內容加入。</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">from&nbsp;rest_framework.decorators&nbsp;import&nbsp;api_view
+from&nbsp;rest_framework.response&nbsp;import&nbsp;Response
+from&nbsp;demo_app.serializers&nbsp;import&nbsp;School_Serializer
+&nbsp;
+@api_view(['GET'])
+def&nbsp;api_overview(request):
+&nbsp;&nbsp;&nbsp;&nbsp;api_urls&nbsp;=&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Schools&nbsp;List':'/school_list',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'School&nbsp;Detail&nbsp;View':'/school_detail/&lt;int:id&gt;',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'School&nbsp;Create':'/school_create',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'School&nbsp;Update':'/school_update/&lt;int:id&gt;',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'School&nbsp;Delete':'/task-delete/&lt;int:id&gt;'
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;Response(api_urls)&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+@api_view(['GET'])
+def&nbsp;school_list(request):
+&nbsp;&nbsp;&nbsp;&nbsp;schools&nbsp;=&nbsp;School.objects.all()
+&nbsp;&nbsp;&nbsp;&nbsp;serializer&nbsp;=&nbsp;School_Serializer(schools,&nbsp;many=True)&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;Response(serializer.data)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+@api_view(['GET'])
+def&nbsp;school_detail(request,&nbsp;id):
+&nbsp;&nbsp;&nbsp;&nbsp;one_school&nbsp;=&nbsp;School.objects.get(id=id)
+&nbsp;&nbsp;&nbsp;&nbsp;serializer&nbsp;=&nbsp;School_Serializer(one_school,&nbsp;many=False)&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;Response(serializer.data)</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">首先我們先看 import 的部分，這次我們從 rest_framework 的方法中 import 了&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">api_view</code>&nbsp;和&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">Response</code>。<br style="box-sizing: border-box;"><code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">api_view</code>&nbsp;在這邊可以設定我們的 API 支援什麼樣的 Request，以目前上方有的 API 為例，全部都是只有支援 GET 類型的 Request。另外，我們也有&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">import demo_app.serializers</code>，因為我們馬上就會在這個 views.py 馬上就使用到了(i.e. School_Serializer)。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">api_overview 這支API內我們一共列了5個待開發的API，大家可以注意到，我們在這邊有刻意的把資料的結構換成 JSON 的形式，也就是 { "key1": “value1”, “key2”: “value2”, ...}，必須要這樣<span style="box-sizing: border-box; font-weight: 700;">才能透過來自 rest_framework 的 Response 方法將資料傳給請求方</span>。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">接著我們看最下面那支 API (i.e.&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">school_detail</code>)，這支有懂，那上面那支就一定沒有問題了! 我們在這裡可以看到&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">school_detail</code>除了接收 HttpRequest 以外，還有接收 id 這個變數，這是從 url pass 進來的，我們需要這個 id 將特定的 Shcool object 取出來。(這裡算是重複了 urls.py, views.py 交互的概念)</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">接下來我們實體化了&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">School_Serializer</code>&nbsp;這個 class，想要實體化就需要提供兩個參數，一個是學派的 Object (i.e. 上面的 one_school)，另一個則是 many 的設定，如果是&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">False</code>，那就表示我們只會 serialize&nbsp;<span style="box-sizing: border-box; font-weight: 700;">一個</span>學派Object；如果是&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 16.2px; padding: 2px 4px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px;">True</code>&nbsp;的話，則表示我們預計會 serialize&nbsp;<span style="box-sizing: border-box; font-weight: 700;">不只一個</span>學派Object，這邊的使用情境可以參考 school_list 這支API。</p><h3 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 22px; white-space: normal; background-color: rgb(255, 255, 255);">Urls</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">處理完 view 之後，我們再來把 url 也設計好。<br style="box-sizing: border-box;">開啟 demo_app/ urls.py，並將 urlpatterns 調整的與下方一致。在這邊，我們一起將其他尚未完成，但預計會完成的 path 也一併加入。(就是註解起來的部分)</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">urlpatterns&nbsp;=&nbsp;[
+&nbsp;&nbsp;&nbsp;&nbsp;path("Confucianism/&lt;int:id&gt;",&nbsp;views.confucianism_detail,&nbsp;name="confucianism"),
+&nbsp;&nbsp;&nbsp;&nbsp;path("Taoism/&lt;int:id&gt;",&nbsp;views.taoism_detail,&nbsp;name="taosim"),
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;以下為新增的內容
+&nbsp;&nbsp;&nbsp;&nbsp;path("",&nbsp;views.api_overview,&nbsp;name="api_overview"),
+&nbsp;&nbsp;&nbsp;&nbsp;path("school_list",&nbsp;views.school_list,&nbsp;name="school_list"),
+&nbsp;&nbsp;&nbsp;&nbsp;path("school_detail/&lt;int:id&gt;",&nbsp;views.school_detail,&nbsp;name="school_detail"),
+&nbsp;&nbsp;&nbsp;&nbsp;#path("school_create",&nbsp;views.school_create,&nbsp;name="school_create"),
+&nbsp;&nbsp;&nbsp;&nbsp;#path("school_update/&lt;int:id&gt;",&nbsp;views.school_update,&nbsp;name="school_update"),
+&nbsp;&nbsp;&nbsp;&nbsp;#path("school_delete/&lt;int:id&gt;",&nbsp;views.school_delete,&nbsp;name="school_delete")
+]</pre><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">6. 成果</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">至此，我們就算是階段性的完成了 GET Request 的API了，將 server run 起來。</p><pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; padding: 16px; margin-top: 0px; margin-bottom: 26px; line-height: 1.42857; color: rgb(196, 196, 196); word-break: break-all; overflow-wrap: break-word; background-color: rgb(35, 35, 35); border: none; border-radius: 4px; tab-size: 4;">$&nbsp;python&nbsp;manage.py&nbsp;runserver</pre><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">開啟瀏覽器，並搜尋以下 url，在這邊同時也呈現我看到的畫面。</p><ol style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; line-height: 1.7;">對應到 name = api_overview 的 url:&nbsp;<a href="http://127.0.0.1:8000/demo_app/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">http://127.0.0.1:8000/demo_app/</a><br style="box-sizing: border-box;"><img src="https://ithelp.ithome.com.tw/upload/images/20200924/20130712jeYWPU62AS.png" alt="https://ithelp.ithome.com.tw/upload/images/20200924/20130712jeYWPU62AS.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"></p></li><li><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; line-height: 1.7;">對應到 name = school_list 的 url:&nbsp;<a href="http://127.0.0.1:8000/demo_app/school_list" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">http://127.0.0.1:8000/demo_app/school_list</a><br style="box-sizing: border-box;"><img src="https://ithelp.ithome.com.tw/upload/images/20200924/20130712JTZBe4nbuL.png" alt="https://ithelp.ithome.com.tw/upload/images/20200924/20130712JTZBe4nbuL.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"></p></li><li><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; line-height: 1.7;">對應到 name = school_detail/<a href="int:id" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">int:id</a>&nbsp;的 url:&nbsp;<a href="http://127.0.0.1:8000/demo_app/school_detail/7" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">http://127.0.0.1:8000/demo_app/school_detail/7</a><br style="box-sizing: border-box;"><span style="box-sizing: border-box; font-weight: 700;">Note: 這邊大家的 id 數字可能會不一樣喔，可以看看大家在上面的 name = school_list 有列出來的學派 id 為何，像我就是在 school_list 看到7，所以這邊的 school_detail 才用7。</span><br style="box-sizing: border-box;"><img src="https://ithelp.ithome.com.tw/upload/images/20200924/20130712kUsAEuMDTs.png" alt="https://ithelp.ithome.com.tw/upload/images/20200924/20130712kUsAEuMDTs.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%; display: inline-block; margin: 10px auto;"></p></li></ol><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">有成功執行的各位，可以看在對應的URL裡看到有被自動生成的介面(此為今天下載的套件 Rest framework 產生的)。伴隨著回傳JSON型式的結果，也可以看到其他相關的資訊。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">以(上圖) School Detail 為例的話:</p><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>請求內容: GET /demo_app/school_detail/7</p></li><li><p>回傳資訊</p></li><ul style="list-style-type: square;" class=" list-paddingleft-2"><li><p>狀態: HTTP 200 OK (表示成功 request，也有成功得到 回傳值。)</p></li><li><p>其他相關的回傳值...</p></li><li><p>JSON Data</p></li></ul></ul><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">邁向 AI 解夢大師 - 第九天</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">今天提到了 API 和 Request 的基本概念，透過 Serializer 的協助，我們很快速的將針對 GET Request 的 API 建立起來了。在明天，我們會用兩種請求(一個是 POST，另一個則是 DELETE) 實作出能夠讓使用者 新增、修改、和刪除 的API。</p><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">參考連結</h2><ul style="box-sizing: border-box; margin-bottom: 30px; padding-left: 30px; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p><a href="https://medium.com/itsems-frontend/api-%E6%98%AF%E4%BB%80%E9%BA%BC-restful-api-%E5%8F%88%E6%98%AF%E4%BB%80%E9%BA%BC-a001a85ab638" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">RESTful API 是什麼</a></p></li><li><p><a href="https://www.django-rest-framework.org/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">Django REST Framework documentation</a></p></li></ul><h2 style="box-sizing: border-box; font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; line-height: 1.5; color: rgb(48, 50, 51); margin-top: 30px; margin-bottom: 14px; font-size: 26px; white-space: normal; background-color: rgb(255, 255, 255);">想更深入認識 AI . FREE Team ？</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">自由團隊 官方網站：<a href="https://aifreeblog.herokuapp.com/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://aifreeblog.herokuapp.com/</a><br style="box-sizing: border-box;">自由團隊 Github：<a href="https://github.com/AI-FREE-Team/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://github.com/AI-FREE-Team/</a><br style="box-sizing: border-box;">自由團隊 粉絲專頁：<a href="https://www.facebook.com/AI.Free.Team/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.facebook.com/AI.Free.Team/</a><br style="box-sizing: border-box;">自由團隊 IG：<a href="https://www.instagram.com/aifreeteam/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.instagram.com/aifreeteam/</a><br style="box-sizing: border-box;">自由團隊 Youtube：<a href="https://www.youtube.com/channel/UCjw6Kuw3kwM_il39NTBJVTg/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 160, 233); text-decoration-line: none; transition: all 0.2s ease 0s;">https://www.youtube.com/channel/UCjw6Kuw3kwM_il39NTBJVTg/</a></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">文章同步發布於：<span style="color: rgb(0, 112, 192); text-decoration: underline;"><a href="https://ithelp.ithome.com.tw/articles/10242713" target="_blank" style="color: rgb(0, 112, 192); text-decoration: underline;">第十二屆 IT 挑戰賽部落格</a></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 26px; font-size: 18px; line-height: 1.7; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255);">(</span><a href="https://aifreeblog.herokuapp.com/posts/113/AI_dream_10/" target="_blank" textvalue="繼續閱讀下一篇教學..." style="box-sizing: border-box; color: rgb(0, 112, 192); text-decoration: underline;"><span style="box-sizing: border-box; color: rgb(0, 112, 192);">繼續閱讀下一篇教學...</span></a><span style="box-sizing: border-box; color: rgb(48, 50, 51); font-family: Lato, &quot;PingFang TC&quot;, &quot;Helvetica Neue&quot;, Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255);">)</span></p>
+
+            <p class="post-meta"><font face="微軟正黑體">由
+              <a href="#">Ken</a>
+              發布於 2020年11月13日 06:32</font></p>
+          </div>
+          <hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="/postlist">回文章列表 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    
+    
+    
+
+
+        <!-- Footer -->
+    <div align="center">
+      <div id="BA_AD_1"></div><script type="text/javascript" src="//js1.bloggerads.net/ShowBanner.aspx?blogid=20180821000002" async=""></script>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/blog">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/AI.Free.Team/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:AI.Free.Team@gmail.com">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright © AI . Free Team 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/bootstrap_blog/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/bootstrap_blog/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="/static/bootstrap_blog/js/clean-blog.min.js"></script>
+
+  
+
+
+</body></html>
