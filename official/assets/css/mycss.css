@@ -1,0 +1,294 @@
+.slideshow-container-header {
+    max-width: 768px;
+    position: relative;
+    /*margin: auto;*/
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    /*margin: 0 2px;*/
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    /*background-color: #912083;*/
+    border-radius: 20px;
+}
+
+/* Fading animation */
+.myfade {
+    -webkit-animation-name: myfade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: myfade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes myfade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes myfade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+
+.nwarp {
+    display: inline;
+}
+
+#why {
+    padding-top: 50px;
+}
+
+.why .why-content {
+    z-index: 2;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 0px 15px rgba(123, 123, 123, 0.5);
+}
+
+.why .why-content h2 {
+    text-align: center;
+}
+
+.why .why-content h2>p:nth-of-type(2) {
+    color: #3fb0f0;
+}
+
+.why .why-content h2>p:nth-of-type(3) {
+    color: #a5a5a5;
+}
+
+.why .why-content h2>p:nth-of-type(4) {
+    color: #8dcd49;
+}
+
+.why .why-content h2>p:nth-of-type(5) {
+    color: #a5a5a5;
+}
+
+.why .why-content .div2 {
+    padding: 5px 30px;
+}
+
+.i_hover:hover {
+    font-size: 2.5em;
+}
+
+
+.resource-to-p p {
+    font-size: 1em;
+    color: gray;
+}
+
+/*.resource-to-p p:hover {
+    font-size: 2em;
+}
+*/
+.color_AI {
+    color: #3fb0f0;
+    font-weight : bold;
+}
+
+.color_FREE {
+    color: #8dcd49!important ;
+    font-weight : bold;
+}
+
+.color_TEAM {
+    color: #a5a5a5;
+    font-weight : bold;
+}
+
+.dowm_15 {
+    padding-bottom: 15px;
+    font-weight: bold;
+
+}
+
+.resource-content {
+    width: 75%;
+    /*text-align: center;*/
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+/*.nav>li {
+  vertical-align: middle;
+  position: relative;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.nav>li:hover, .nav>li:focus, .nav>li:active {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  display: inline;
+}
+.nav>li:hover:before, .nav>li:focus:before, .nav>li:active:before {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+  display: inline;
+}*/
+
+body {
+    font-family: Microsoft JhengHei;
+}
+
+.topbar-content {
+    width: 100%;
+    /*text-align: center;*/
+    padding-left: var(--bs-gutter-x, 14rem);
+    margin-left: auto;
+    align-items: center;
+}
+
+.footer_background {
+    background-color: #323435;
+}
+
+
+.container-header{
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-header {
+    max-width: 540px;
+  }
+  .title-left {
+    padding-left: 0px
+  }
+}
+@media (min-width: 768px) {
+  .container-header {
+    max-width: 720px;
+  }
+  .title-left {
+    padding-left: 0px
+  }
+}
+@media (min-width: 992px) {
+  .container-header {
+    max-width: 960px;
+  }
+  .title-left {
+    padding-left: 40px
+  }
+}
+@media (min-width: 1200px) {
+  .container-header {
+    max-width: 1140px;
+  }
+  .title-left {
+    padding-left: 40px
+  }
+}
+@media (min-width: 1400px) {
+  .container-header {
+    max-width: 1500px;
+  }
+  .title-left {
+    padding-left: 60px
+  }
+}
+@media (min-width: 1800px) {
+  .title-left {
+    padding-left: 0px
+  }
+}
+
+/*.title-left {
+    padding-left: 1rem;
+  }*/
+
+.service_title {
+    text-align: center;
+    /*font-size: 15px;*/
+    font-weight: 700;
+    /*color: #3fb0f0;*/
+}
+
