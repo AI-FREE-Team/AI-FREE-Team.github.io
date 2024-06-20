@@ -7,6 +7,41 @@
 // Scripts
 // 
 
+let currentIndex = 0;
+const feedbackContainer = document.querySelector('.feedback-container');
+const feedbacks = document.querySelectorAll('.feedback');
+const totalFeedbacks = feedbacks.length;
+
+function updateFeedbacks() {
+    const offset = currentIndex * -33.33; // 一次移動 33.33%
+    feedbackContainer.style.transform = `translateX(${offset}%)`;
+    updateArrows();
+}
+
+function prevFeedback() {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateFeedbacks();
+    }
+}
+
+function nextFeedback() {
+    if (currentIndex < totalFeedbacks - 3) { // 確保不超過範圍
+        currentIndex++;
+        updateFeedbacks();
+    }
+}
+
+function updateArrows() {
+    document.querySelector('.left-arrow').disabled = currentIndex === 0;
+    document.querySelector('.right-arrow').disabled = currentIndex === totalFeedbacks - 3;
+}
+
+// 初始化輪播
+updateFeedbacks();
+
+
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function

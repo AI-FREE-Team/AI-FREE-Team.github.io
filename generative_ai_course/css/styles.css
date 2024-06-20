@@ -10,6 +10,65 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ .carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* 設置背景為白色 */
+  padding: 20px 0; /* 增加上下內距以保持居中 */
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  background-color: transparent; /* 背景設置為透明 */
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100%; /* 設置最大寬度以保持居中效果 */
+  justify-content: center; /* 使整個容器居中 */
+}
+
+.feedback-wrapper {
+  overflow: hidden;
+  width: 100%; /* 調整寬度以容納留白 */
+}
+
+.feedback-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.feedback {
+  min-width: calc(33.33% - 10px); /* 一次顯示三個 Feedback 並留白 */
+  margin: 0 5px; /* 添加留白 */
+}
+
+.arrow {
+  background-color: #333; /* 深色背景 */
+  border: none;
+  font-size: 2rem; /* 調整箭頭大小 */
+  color: #fff;
+  cursor: pointer;
+  padding: 15px; /* 增加箭頭的內距 */
+  border-radius: 10%; /* 圓形按鈕 */
+  margin: 0 10px; /* 添加箭頭與容器之間的留白 */
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.arrow:hover:not(:disabled) {
+  background-color: #ffc800; /* Hover 時的背景色 */
+  color: #000
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
