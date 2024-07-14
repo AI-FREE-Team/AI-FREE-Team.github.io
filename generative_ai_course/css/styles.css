@@ -40,6 +40,28 @@
   }
 }
 
+.pc-image {
+  display: none;
+}
+.phone-image {
+  display: none;
+}
+
+/* 大於等於768px的設備顯示PC圖片 */
+@media (min-width: 768px) {
+  .pc-image {
+      display: block;
+      width: 100%;
+  }
+}
+
+/* 小於768px的設備顯示手機圖片 */
+@media (max-width: 767px) {
+  .phone-image {
+      display: block;
+      width: 100%;
+  }
+}
 /* 隱藏桌機上不需要的內容 */
 @media (max-width: 991px) {
   .column-2 {
@@ -109,15 +131,16 @@
   margin: 0 5px; /* 添加留白 */
 }
 
+
 .arrow {
   background-color: #333; /* 深色背景 */
   border: none;
-  font-size: 2rem; /* 調整箭頭大小 */
+  font-size: 2.5rem; /* 調整箭頭大小 */
   color: #fff;
   cursor: pointer;
-  padding: 15px; /* 增加箭頭的內距 */
-  border-radius: 10%; /* 圓形按鈕 */
-  margin: 0 10px; /* 添加箭頭與容器之間的留白 */
+  padding: 0px; /* 增加箭頭的內距 */
+  border-radius: 60%; /* 圓形按鈕 */
+  margin: 0 1px; /* 添加箭頭與容器之間的留白 */
 }
 
 .arrow:focus {
@@ -3857,13 +3880,13 @@ textarea.form-control-lg {
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-padding-y: 0rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-nav-link-padding-x: 0.0rem;
-  --bs-navbar-toggler-padding-y: 0.25rem;
+  --bs-navbar-toggler-padding-y: 0.0rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.00rem;
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -3905,7 +3928,7 @@ textarea.form-control-lg {
 
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
-  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-padding-y: 0rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-navbar-color);
   --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
@@ -3926,7 +3949,7 @@ textarea.form-control-lg {
 
 .navbar-text {
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0rem;
   color: var(--bs-navbar-color);
 }
 .navbar-text a,
@@ -3944,7 +3967,7 @@ textarea.form-control-lg {
 .navbar-toggler {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
-  line-height: 1;
+  line-height: 0;
   color: var(--bs-navbar-color);
   background-color: transparent;
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
